@@ -61,6 +61,8 @@ function epHTML(e,open){
   const body=`${src?`<audio controls preload="none" src="${esc(src)}"></audio><div class="actions"><a class="btn" href="${esc(src)}" target="_blank" rel="noopener">Open MP3</a></div>`:""}${areas}`;
   return open?`<article class="ep">${head}${body}</article>`:`<details class="ep"><summary>${head}</summary>${body}</details>`;
 }
+// Single active player: "play" doesn't bubble, so listen in the capture phase.
+document.addEventListener("play",ev=>{document.querySelectorAll("audio").forEach(a=>{if(a!==ev.target)a.pause()})},true);
 (async()=>{
   const list=document.getElementById("list");
   try{
