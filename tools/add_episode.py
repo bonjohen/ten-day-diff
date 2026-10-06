@@ -117,6 +117,10 @@ def render_script(stamp, md_path, title, date, window=""):
     meta = "%s %d, %d" % (MON[m - 1], d, y) + (" · covers " + window if window else "")
     os.makedirs(os.path.join(ROOT, "scripts"), exist_ok=True)
     rel = "scripts/%s.html" % stamp
+    # Keep the script source next to the page so it can be re-rendered or reused.
+    src_copy = os.path.join(ROOT, "scripts", stamp + ".md")
+    if os.path.abspath(md_path) != src_copy:
+        shutil.copyfile(md_path, src_copy)
     with open(os.path.join(ROOT, rel), "w", encoding="utf-8") as f:
         f.write(PAGE.format(title=html.escape(title), meta=html.escape(meta), body=body))
     return rel
