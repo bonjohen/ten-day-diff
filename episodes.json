@@ -1,0 +1,963 @@
+[
+ {
+  "audio_url": "episodes/2026-09-29-act-on-it.mp3",
+  "date": "2026-09-28",
+  "duration": "8:12",
+  "sections": [],
+  "title": "Act On It (Sept 28 items, sorted by deadline)",
+  "published_at": "2026-09-28"
+ },
+ {
+  "audio_url": "episodes/2026-09-28.mp3",
+  "date": "2026-09-28",
+  "duration": "7:55",
+  "sections": [
+   {
+    "area": "Technical - AI/software",
+    "items": [
+     {
+      "date": "2026-09-22",
+      "name": "Claude Opus 5.5 launch and pricing",
+      "url": "https://releasebot.io/updates/anthropic/claude-developer-platform"
+     },
+     {
+      "date": "2026-09-22",
+      "name": "OpenAI GPT-6 Luna and Sol",
+      "url": "https://llmgateway.io/timeline"
+     },
+     {
+      "date": "2026-09-21",
+      "name": "Xiaomi MiMo V2.6 Pro and Flash",
+      "url": "https://en.wikipedia.org/wiki/Xiaomi_MiMo"
+     }
+    ]
+   },
+   {
+    "area": "Technical - Materials science",
+    "items": [
+     {
+      "date": "2026-09-21",
+      "name": "ORNL polyethylene to gasoline/diesel",
+      "url": "https://www.sciencedaily.com/news/matter_energy/materials_science/"
+     },
+     {
+      "date": "2026-09-22",
+      "name": "Stanford real-time phonon quantum jumps",
+      "url": "https://www.sciencedaily.com/news/matter_energy/materials_science/"
+     },
+     {
+      "date": "2026-09",
+      "name": "Perovskite modules with lead carboxylate passivators",
+      "url": "https://www.nature.com/subjects/materials-science"
+     },
+     {
+      "date": "2026-09-14",
+      "name": "CrSBr microwave-to-optical conversion",
+      "url": "https://www.nature.com/subjects/materials-science/nmat"
+     }
+    ]
+   },
+   {
+    "area": "DIY electronics",
+    "items": [
+     {
+      "date": "2026-09-27",
+      "name": "LILYGO T-Dongle-C5",
+      "url": "https://www.cnx-software.com/2026/09/27/lilygo-t-dongle-c5-an-esp32-c5-usb-dongle-with-microsd-card-slot-optional-0-96-inch-oled/"
+     },
+     {
+      "date": "2026-09-25",
+      "name": "8Sight T100 LWIR camera",
+      "url": "https://www.cnx-software.com/2026/09/25/compact-long-wave-infrared-camera-pairs-stm32n6-mcu-with-lynred-ati320-thermal-sensor/"
+     },
+     {
+      "date": "2026-09-25",
+      "name": "MemBrowse",
+      "url": "https://www.cnx-software.com/2026/09/25/membrowse-continuously-tracks-firmware-memory-footprint-is-free-for-open-source-projects/"
+     },
+     {
+      "date": "2026-09-26",
+      "name": "KryonOS",
+      "url": "https://www.cnx-software.com/2026/09/26/kryonos-turns-esp32-boards-into-javascript-powered-mini-computer/"
+     }
+    ]
+   },
+   {
+    "area": "Data regulation",
+    "items": [
+     {
+      "date": "2026-08-28",
+      "name": "California SB 690 (CIPA)",
+      "url": "https://www.duanemorris.com/alerts/california_legislature_passes_sb690_creating_major_curb_pixel_tracking_lawsuits_under_cipa_0926.html"
+     },
+     {
+      "date": "2026-09",
+      "name": "EU Digital Omnibus leaked Council draft",
+      "url": "https://cdt.org/insights/cdt-europes-ai-bulletin-september-2026/"
+     },
+     {
+      "date": "2026-09",
+      "name": "Colorado Chatbot Safety Act rulemaking",
+      "url": "https://natlawreview.com/article/br-privacy-security-ai-download-september-2026"
+     }
+    ]
+   },
+   {
+    "area": "Claude for GTM engineering",
+    "items": [
+     {
+      "date": "2026-09-15",
+      "name": "Salesforce in Claude (beta)",
+      "url": "https://releasebot.io/updates/anthropic/claude"
+     },
+     {
+      "date": "2026-09-24",
+      "name": "Claude Tag personal connectors",
+      "url": "https://releasebot.io/updates/anthropic/claude"
+     },
+     {
+      "date": "2026-09-25",
+      "name": "Plugin directory portal + MCP 2.0",
+      "url": "https://claude.com/blog/build-plugins-for-claude"
+     },
+     {
+      "date": "2026-09-23",
+      "name": "Claude Marketplace",
+      "url": "https://claude.com/blog/claude-marketplace"
+     }
+    ]
+   }
+  ],
+  "title": "Week of September 28",
+  "published_at": "2026-09-28"
+ },
+ {
+  "audio_url": "episodes/2026-09-29_1755.mp3",
+  "date": "2026-09-29",
+  "duration": "9:51",
+  "published_at": "2026-09-29_1755",
+  "sections": [
+   {
+    "area": "Technical - AI/software",
+    "items": [
+     {
+      "date": "2026-09-21",
+      "name": "xAI Grok 4.7",
+      "url": "https://tech.yahoo.com/ai/gemini/articles/xai-launches-grok-4-7-171603280.html"
+     },
+     {
+      "date": "2026-09-28",
+      "name": "NVIDIA OpenShell open-source agent runtime + Claude Managed Agents",
+      "url": "https://claude.com/blog/giving-companies-more-control-over-their-ai-agents-with-nvidia"
+     }
+    ]
+   },
+   {
+    "area": "Technical - Materials science",
+    "items": [
+     {
+      "date": "2026-09-23",
+      "name": "Direct band gap in 1H-stacked CVD MoS2 bilayers (Nature)",
+      "url": "https://www.nature.com/articles/s41586-026-11069-3"
+     },
+     {
+      "date": "2026-09-23",
+      "name": "Sequence-encoded hexagonal peptide nanofibrils with ~5 nm channels (Nature)",
+      "url": "https://www.nature.com/articles/s41586-026-11016-2"
+     },
+     {
+      "date": "2026-09-24",
+      "name": "Distant time crystals synchronize in GaAs (TU Dortmund)",
+      "url": "https://www.sciencedaily.com/releases/2026/09/260923035934.htm"
+     }
+    ]
+   },
+   {
+    "area": "DIY electronics",
+    "items": [
+     {
+      "date": "2026-09-29",
+      "name": "Walnut Pi CM2 (Allwinner T527 compute module)",
+      "url": "https://www.cnx-software.com/2026/09/29/walnut-pi-cm2-a-cheaper-raspberry-pi-cm5-alternative-based-on-allwinner-t527-octa-core-soc/"
+     },
+     {
+      "date": "2026-09-29",
+      "name": "NXP FRDM-IMXRT1186 dev board",
+      "url": "https://www.cnx-software.com/2026/09/29/nxp-frdm-imxrt1186-development-board-features-i-mx-rt1186-crossover-mcu-four-ethernet-ports/"
+     },
+     {
+      "date": "2026-09-28",
+      "name": "Critical Link MitySOM-AM62x/A/P SoMs",
+      "url": "https://www.cnx-software.com/2026/09/28/critical-link-mitysom-am62x-a-p-ti-sitara-am62-so-dimm-soms-for-edge-ai-and-industrial-automation/"
+     }
+    ]
+   },
+   {
+    "area": "Data regulation",
+    "items": [
+     {
+      "date": "2026-09-25",
+      "name": "Senate Judiciary subcommittee hearing on Flock camera network",
+      "url": "https://iapp.org/news/a/us-senators-flag-unease-over-commercial-surveillance-cameras"
+     },
+     {
+      "date": "2026-09-29",
+      "name": "OpenAI agents accessed Australian government sites; investigation and apology",
+      "url": "https://techcrunch.com/2026/09/29/openai-apologizes-to-australia-after-its-ai-agents-breached-government-sites/"
+     }
+    ]
+   },
+   {
+    "area": "Claude for GTM engineering",
+    "items": [
+     {
+      "date": "2026-09-28",
+      "name": "Claude Sonnet 5.5",
+      "url": "https://venturebeat.com/technology/anthropic-launches-claude-sonnet-5-5-with-30-cost-reduction-per-task-due-to-faster-speeds-and-fewer-tool-calls"
+     },
+     {
+      "date": "2026-09-24",
+      "name": "Pre-output refusal billing resumed; Compliance API feed drops titles",
+      "url": "https://releasebot.io/updates/anthropic/claude-developer-platform"
+     },
+     {
+      "date": "2026-09-28",
+      "name": "Claude Code 2.1.283/2.1.284: /doctor prompt-audit, MCP OTel outputs, /mcp reconnect all",
+      "url": "https://releasebot.io/updates/anthropic/claude-code"
+     }
+    ]
+   }
+  ],
+  "title": "Sonnet 5.5, default-deny agents, and a direct-gap MoS2 bilayer"
+ },
+ {
+  "audio_url": "episodes/2026-09-30_0646.mp3",
+  "date": "2026-09-30",
+  "duration": "8:29",
+  "published_at": "2026-09-30_0646",
+  "sections": [
+   {
+    "area": "Technical - AI/software",
+    "items": [
+     {
+      "date": "2026-09-23",
+      "name": "Gemini 3.8 Flash TTS and Flash-Lite TTS",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/"
+     },
+     {
+      "date": "2026-09-28",
+      "name": "ElevenLabs Eleven v4 and v4 Turbo",
+      "url": "https://elevenlabs.io/blog/eleven-v4"
+     },
+     {
+      "date": "2026-09-28",
+      "name": "Git 2.56",
+      "url": "https://github.blog/open-source/git/highlights-from-git-2-56/"
+     }
+    ]
+   },
+   {
+    "area": "Technical - Materials science",
+    "items": [
+     {
+      "date": "2026-09-25",
+      "name": "3D-printed Ti-7.5Al-3.3Cr with sub-10-nm stacking bands",
+      "url": "https://www.nature.com/articles/s41563-026-02749-6"
+     },
+     {
+      "date": "2026-09-22",
+      "name": "Symmetric Ni(OH)2 electrochemical cell for direct air capture",
+      "url": "https://www.nature.com/articles/s41560-026-02129-z"
+     },
+     {
+      "date": "2026-09-23",
+      "name": "Interlayer hybridization drives superconductivity in bilayer nickelate films",
+      "url": "https://www.nature.com/articles/s41563-026-02750-z"
+     }
+    ]
+   },
+   {
+    "area": "DIY electronics",
+    "items": [
+     {
+      "date": "2026-09-22",
+      "name": "Nordic nRF54LC10A",
+      "url": "https://www.cnx-software.com/2026/09/22/nordic-nrf54lc10a-a-tiny-bluetooth-le-and-802-15-4-soc-with-sub-50-na-hibernation-mode/"
+     },
+     {
+      "date": "2026-09-21",
+      "name": "Realtek RTL8773J",
+      "url": "https://www.cnx-software.com/2026/09/21/realtek-rtl8773j-a-bluetooth-7-ready-cortex-m55-m33-microcontroller-with-hdt-support/"
+     },
+     {
+      "date": "2026-09-24",
+      "name": "Quectel SE200ZC-AP (Rockchip RV1126B)",
+      "url": "https://www.cnx-software.com/2026/09/24/quectel-se200zc-ap-smart-module-supports-up-to-five-cameras-with-rockchip-rv1126b-bj-soc/"
+     }
+    ]
+   },
+   {
+    "area": "Data regulation",
+    "items": [
+     {
+      "date": "2026-09-27",
+      "name": "California SB 923 signed, AB 1542 vetoed (plus AB 883)",
+      "url": "https://news.bloomberglaw.com/privacy-and-data-security/newsom-vetoes-ban-of-sensitive-data-sales-expands-privacy-laws"
+     },
+     {
+      "date": "2026-09-21",
+      "name": "Irish DPC fines Google EUR 403M over location data",
+      "url": "https://www.dataprotection.ie/en/news-media/latest-news/data-protection-commission-fines-google-eu403-million-following-inquiry-googles-processing-location"
+     },
+     {
+      "date": "2026-09-21",
+      "name": "EDPB Guidelines on Administrative Fines",
+      "url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
+     }
+    ]
+   },
+   {
+    "area": "Claude for GTM engineering",
+    "items": [
+     {
+      "date": "2026-09-29",
+      "name": "Claude Code 2.1.285: plugin configure, preconfigured .mcpb servers, allowedProviders, headless auto mode",
+      "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+     },
+     {
+      "date": "2026-09-23",
+      "name": "Snowflake inference API on Claude Marketplace + ThoughtSpot Spotter connector",
+      "url": "https://claude.com/blog/how-coderabbit-power-digital-and-thoughtspot-scale-with-snowflake-and-vercel-on-claude-marketplace"
+     },
+     {
+      "date": "2026-09-29",
+      "name": "Claude Tag DMs for Cowork seats + MCP_DISCOVERY_CACHE",
+      "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+     }
+    ]
+   }
+  ],
+  "title": "Voices, printed titanium, and California's deletion rule",
+  "window": "Sep 20 to Sep 29"
+ },
+ {
+  "audio_url": "episodes/2026-10-01_0625.mp3",
+  "date": "2026-10-01",
+  "duration": "7:30",
+  "published_at": "2026-10-01_0625",
+  "sections": [
+   {
+    "area": "Technical - AI/software",
+    "items": [
+     {
+      "date": "2026-09-29",
+      "name": "OpenAI DevDay 2026: GPT-6.1 Sol, Agents API computer use, Decisions API, MCP events",
+      "url": "https://openai.com/index/devday-2026-recap/"
+     },
+     {
+      "date": "2026-09-30",
+      "name": "White House 'morally binding' AI safety commitments with six labs",
+      "url": "https://iapp.org/news/a/white-house-major-ai-developers-reach-morally-binding-safety-commitments"
+     }
+    ]
+   },
+   {
+    "area": "Technical - Materials science",
+    "items": [
+     {
+      "date": "2026-09-30",
+      "name": "Wafer-scale epitaxy of high-mobility p-type boron carbon nitride",
+      "url": "https://www.nature.com/articles/s41586-026-11047-9"
+     },
+     {
+      "date": "2026-09-23",
+      "name": "New conductive, ductile boron allotrope Imma-B60",
+      "url": "https://www.nature.com/articles/d41586-026-03001-6"
+     }
+    ]
+   },
+   {
+    "area": "DIY electronics",
+    "items": [
+     {
+      "date": "2026-09-30",
+      "name": "Waveshare ESP32-C5-Touch-LCD-3.5",
+      "url": "https://www.cnx-software.com/2026/09/30/esp32-c5-devkit-features-3-5-inch-touch-lcd-optional-camera-and-battery/"
+     },
+     {
+      "date": "2026-09-30",
+      "name": "OpenArm 2.0 open-source 7-DOF arm (Enactic)",
+      "url": "https://www.cnx-software.com/2026/09/30/openarm-2-0-an-open-source-7-dof-robot-arm-with-qdd-joints-bilateral-force-feedback-in-hand-camera/"
+     },
+     {
+      "date": "2026-09-28",
+      "name": "Up2Stream spins off from Arylic as DIY audio brand",
+      "url": "https://www.cnx-software.com/2026/09/28/up2stream-spins-off-from-arylic-as-a-dedicated-diy-audio-brand/"
+     }
+    ]
+   },
+   {
+    "area": "Data regulation",
+    "items": [
+     {
+      "date": "2026-09-30",
+      "name": "California SB 690 signed (follows SB 690, presented Sept 28)",
+      "url": "https://www.newsmediaalliance.org/newsom-signs-sb-690-into-law/"
+     }
+    ]
+   },
+   {
+    "area": "Claude for GTM engineering",
+    "items": [
+     {
+      "date": "2026-09-30",
+      "name": "Claude for Government GA (FedRAMP High, no seat fees)",
+      "url": "https://claude.com/blog/claude-for-government-is-now-generally-available"
+     },
+     {
+      "date": "2026-09-28",
+      "name": "Claude Sonnet 4.5 deprecated, retires Nov 30",
+      "url": "https://releasebot.io/updates/anthropic/claude-developer-platform"
+     },
+     {
+      "date": "2026-09-30",
+      "name": "Claude Code 2.1.286: --desktop, DISABLE_WEB_FETCH, non-streaming retry cap",
+      "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+     }
+    ]
+   }
+  ],
+  "title": "DevDay, p-type BCN, and SB 690 signed",
+  "window": "Sep 21 to Sep 30"
+ },
+ {
+  "audio_url": "episodes/2026-10-02_0559.mp3",
+  "date": "2026-10-02",
+  "duration": "9:45",
+  "published_at": "2026-10-02_0559",
+  "sections": [
+   {
+    "area": "Technical - AI/software",
+    "items": [
+     {
+      "date": "2026-09-30",
+      "name": "Google Gemini 4 Argon (limited to Fairwind security partners)",
+      "url": "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/"
+     },
+     {
+      "date": "2026-10-01",
+      "name": "arXiv caps submitters at two papers per month",
+      "url": "https://blog.arxiv.org/2026/10/01/updated-rate-limit-policy/"
+     }
+    ]
+   },
+   {
+    "area": "Technical - Materials science",
+    "items": [
+     {
+      "date": "2026-09-30",
+      "name": "Conformal field theory spectra measured in a Rydberg quantum simulator (Caltech)",
+      "url": "https://www.sciencedaily.com/releases/2026/09/260928100554.htm"
+     },
+     {
+      "date": "2026-09-30",
+      "name": "Event-driven organic photosensor with ionic-mediated inhibition (PgBDT-T:Y6)",
+      "url": "https://www.nature.com/articles/s41563-026-02747-8"
+     },
+     {
+      "date": "2026-10-01",
+      "name": "Reassessing refractory high-entropy alloys (Ding and Ma comment)",
+      "url": "https://www.nature.com/articles/s41578-026-00969-5"
+     }
+    ]
+   },
+   {
+    "area": "DIY electronics",
+    "items": [
+     {
+      "date": "2026-10-01",
+      "name": "LakeShark ESP32-P4 SDR scanner firmware for LilyGO T-Display P4",
+      "url": "https://www.cnx-software.com/2026/10/01/lakeshark-firmware-turns-lilygo-t-display-p4-into-a-handheld-esp32-p4-sdr-scanner/"
+     },
+     {
+      "date": "2026-10-01",
+      "name": "Raspberry Pi Smart Display Module for CM5 ($30)",
+      "url": "https://www.cnx-software.com/2026/10/01/30-raspberry-pi-smart-display-module-for-cm5-targets-digital-signage-displays-and-kiosks/"
+     },
+     {
+      "date": "2026-10-01",
+      "name": "Elgato Key Light retrofit: ESP32-C3 Rust firmware with Matter",
+      "url": "https://hackaday.com/2026/10/01/elgato-key-lights-get-matter-upgrade/"
+     }
+    ]
+   },
+   {
+    "area": "Data regulation",
+    "items": [
+     {
+      "date": "2026-09-30",
+      "name": "California SB 947 No Robo Bosses Act and AB 1883 signed; SB 1130 smart glasses bill vetoed",
+      "url": "https://thenextweb.com/news/no-robo-bosses-act-newsom-ai-bills-smart-glasses-veto"
+     },
+     {
+      "date": "2026-10-01",
+      "name": "Meta wins dismissal of California DMV pixel tracking suit",
+      "url": "https://www.mlex.com/mlex/data-privacy-security/articles/2532905/meta-wins-dismissal-of-tracking-lawsuit-over-calif-dmv-data"
+     },
+     {
+      "date": "2026-10-01",
+      "name": "UK ICO: AI developer transparency commitments, agentic AI call for evidence",
+      "url": "https://www.mlex.com/mlex/data-privacy-security/articles/2532763/ai-companies-commit-to-uk-changes-on-transparency-information-rights-ico-says"
+     }
+    ]
+   },
+   {
+    "area": "Claude for GTM engineering",
+    "items": [
+     {
+      "date": "2026-10-01",
+      "name": "Claude Code mods (Claude Code 2.1.287)",
+      "url": "https://claude.com/blog/claude-code-mods"
+     },
+     {
+      "date": "2026-09-30",
+      "name": "Anthropic sales team rebuilt inbound with Claude Managed Agents",
+      "url": "https://claude.com/blog/how-anthropics-sales-team-rebuilt-inbound-with-claude-managed-agents"
+     }
+    ]
+   }
+  ],
+  "title": "Mods, Argon, and the robo-boss ban",
+  "window": "Sep 22 to Oct 1"
+ },
+ {
+  "audio_url": "episodes/2026-10-03_0559.mp3",
+  "date": "2026-10-03",
+  "duration": "9:33",
+  "published_at": "2026-10-03_0559",
+  "sections": [
+   {
+    "area": "Technical - AI/software",
+    "items": [
+     {
+      "date": "2026-10-02",
+      "name": "Apple tightens macOS Full Disk Access over AI agent risks",
+      "url": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/"
+     },
+     {
+      "date": "2026-10-01",
+      "name": "AWS Strands Decider 2B open-source decision model",
+      "url": "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/"
+     }
+    ]
+   },
+   {
+    "area": "Technical - Materials science",
+    "items": [
+     {
+      "date": "2026-10-02",
+      "name": "Polarization vortices in twisted bilayer SrRuO3 (ferromagnetic metal)",
+      "url": "https://www.nature.com/articles/s41563-026-02755-8"
+     },
+     {
+      "date": "2026-10-02",
+      "name": "Single-stripe magnetic order and bilayer spin dynamics in La3Ni2O7",
+      "url": "https://www.nature.com/articles/s41563-026-02768-3"
+     },
+     {
+      "date": "2026-09-23",
+      "name": "Adsorption-conversion synthesis of ultrathin intermetallics and high-entropy alloys",
+      "url": "https://www.nature.com/articles/s41563-026-02752-x"
+     }
+    ]
+   },
+   {
+    "area": "DIY electronics",
+    "items": [
+     {
+      "date": "2026-10-02",
+      "name": "Meta Muse Gadgets: open firmware and Linux SDK for Raspberry Pi / ESP32",
+      "url": "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/"
+     },
+     {
+      "date": "2026-10-02",
+      "name": "AAEON UP Xtreme PTL Edge Air with AirJet solid-state cooling",
+      "url": "https://www.cnx-software.com/2026/10/02/up-xtreme-ptl-edge-air-panther-lake-mini-pc-gets-airjet-solid-state-active-cooling-solution/"
+     },
+     {
+      "date": "2026-10-02",
+      "name": "68k-MBC: three-IC 68008 homebrew computer",
+      "url": "https://hackaday.com/2026/10/02/2026-retrocomputing-challenge-a-homebrew-computer-in-only-three-ics2026-retrocomputing-challenge-a-homebrew-computer-in-only-3-ics/"
+     }
+    ]
+   },
+   {
+    "area": "Data regulation",
+    "items": [
+     {
+      "date": "2026-09-30",
+      "name": "FTC opens probe into OpenAI, Anthropic and METR over AI agents",
+      "url": "https://iapp.org/news/a/a-view-from-dc-the-ftc-says-your-companys-agents-are-your-problem"
+     },
+     {
+      "date": "2026-09-30",
+      "name": "California AG subpoenas OpenAI; OpenAI sends 100 third-party incident notices",
+      "url": "https://iapp.org/news/a/openai-faces-california-doj-subpoena-amid-growing-cybersecurity-incident-notices"
+     },
+     {
+      "date": "2026-09-30",
+      "name": "Senate rogue-AI hearing; Hawley-Murphy AI Agent Accountability Act announced",
+      "url": "https://iapp.org/news/a/us-senate-subcommittee-tackles-rogue-ai-risks-accountability"
+     }
+    ]
+   },
+   {
+    "area": "Claude for GTM engineering",
+    "items": [
+     {
+      "date": "2026-10-02",
+      "name": "Claude Code 2.1.288: partial-response continue on timeouts, gh api in cloud, MCP OAuth re-auth, --max-findings",
+      "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+     },
+     {
+      "date": "2026-10-02",
+      "name": "Claude Frontier Academy ($100M, 10,000 Frontier Deployed Engineers)",
+      "url": "https://www.unite.ai/new-anthropic-academy-backs-10-000-engineer-residencies-with-100m/"
+     },
+     {
+      "date": "2026-09-29",
+      "name": "Asana human-agent teams with Claude (access scoping, shared memory)",
+      "url": "https://claude.com/blog/agents-you-can-coach-how-asana-builds-human-agent-teams-with-claude"
+     }
+    ]
+   }
+  ],
+  "title": "Agents on the Hook",
+  "window": "Sep 23 to Oct 2"
+ },
+ {
+  "audio_url": "episodes/2026-10-04_0559.mp3",
+  "date": "2026-10-04",
+  "duration": "9:17",
+  "published_at": "2026-10-04_0559",
+  "sections": [
+   {
+    "area": "Technical - AI/software",
+    "items": [
+     {
+      "date": "2026-10-01",
+      "name": "Cloudflare Clef and Clef-flash decision models",
+      "url": "https://developers.cloudflare.com/changelog/product/workers-ai/"
+     },
+     {
+      "date": "2026-10-01",
+      "name": "Shopify Canvas AI store builder",
+      "url": "https://techcrunch.com/2026/10/01/shopify-debuts-canvas-a-way-to-build-online-stores-by-chatting-with-ai/"
+     },
+     {
+      "date": "2026-10-02",
+      "name": "Clay's Kareem Amin on the rise of the GTM engineer (Disrupt 2026)",
+      "url": "https://techcrunch.com/2026/10/02/techcrunch-disrupt-2026-clays-kareem-amin-on-the-rise-of-the-gtm-engineer/"
+     }
+    ]
+   },
+   {
+    "area": "Technical - Materials science",
+    "items": [
+     {
+      "date": "2026-10-03",
+      "name": "NbSe2 superconductivity enhanced in a terahertz dark cavity",
+      "url": "https://www.sciencedaily.com/releases/2026/09/260930225456.htm"
+     },
+     {
+      "date": "2026-10-01",
+      "name": "Flat band and charge order in Fe5GeTe2",
+      "url": "https://www.sciencedaily.com/releases/2026/09/260929053548.htm"
+     },
+     {
+      "date": "2026-09-25",
+      "name": "Water-stable OECTs with supramolecular artificial ion channels",
+      "url": "https://www.nature.com/articles/s41563-026-02745-w"
+     }
+    ]
+   },
+   {
+    "area": "DIY electronics",
+    "items": [
+     {
+      "date": "2026-10-03",
+      "name": "ESP32 as an SDR via undocumented I/Q mode",
+      "url": "https://hackaday.com/2026/10/03/the-esp32-an-sdr-in-itself/"
+     },
+     {
+      "date": "2026-10-02",
+      "name": "Avaota F2 Allwinner V861 RISC-V camera SBC",
+      "url": "https://www.cnx-software.com/2026/10/02/avaota-f2-allwinner-v861-risc-v-sbc-targets-ai-cameras-with-ptz-and-audio-support/"
+     },
+     {
+      "date": "2026-10-03",
+      "name": "Soda-can solder stencils with a fiber laser",
+      "url": "https://hackaday.com/2026/10/03/a-good-diy-solder-stencil-begins-with-a-cleanly-sliced-soda-can/"
+     }
+    ]
+   },
+   {
+    "area": "Data regulation",
+    "items": [
+     {
+      "date": "2026-10-03",
+      "name": "Federal judge rules warrantless Flock search unconstitutional",
+      "url": "https://techcrunch.com/2026/10/03/federal-judge-calls-flock-indiscriminate-mass-surveillance/"
+     },
+     {
+      "date": "2026-10-02",
+      "name": "Ban Flock Act introduced",
+      "url": "https://techcrunch.com/2026/10/02/sanders-introduces-bill-to-ban-the-federal-government-from-using-flock/"
+     },
+     {
+      "date": "2026-09-29",
+      "name": "Executive order: Inaugurating the Era of Super Intelligence",
+      "url": "https://iapp.org/news/a/ai-by-any-other-name-white-house-directs-federal-agencies-to-enter-the-era-of-super-intelligence"
+     },
+     {
+      "date": "2026-10-01",
+      "name": "IAPP: assess AI connectors in FRIAs; MCP logging gap",
+      "url": "https://iapp.org/news/a/the-fria-is-coming-assess-ai-connectors-not-just-ai-systems"
+     }
+    ]
+   },
+   {
+    "area": "Claude for GTM engineering",
+    "items": [
+     {
+      "date": "2026-10-03",
+      "name": "Claude Code 2.1.289",
+      "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+     },
+     {
+      "date": "2026-09-24",
+      "name": "Claude Code caching changes for long sessions (Opus 5.5 blog)",
+      "url": "https://claude.com/blog/claude-opus-5-5-built-for-coding-sessions-that-use-more-context"
+     }
+    ]
+   }
+  ],
+  "title": "Decisions, Dark Cavities, and Flock in Court",
+  "window": "Sep 24 to Oct 3"
+ },
+ {
+  "audio_url": "episodes/2026-10-05_0600.mp3",
+  "date": "2026-10-05",
+  "duration": "8:51",
+  "published_at": "2026-10-05_0600",
+  "sections": [
+   {
+    "area": "Technical - AI/software",
+    "items": [
+     {
+      "date": "2026-10-04",
+      "name": "Google pauses its Open Source Software Vulnerability Rewards Program over AI-generated submissions",
+      "url": "https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/"
+     },
+     {
+      "date": "2026-10-02",
+      "name": "Databricks: cross-engine ABAC GA, JDBC Unity Catalog connections GA, OpenJev on Unity Gateway",
+      "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/october"
+     },
+     {
+      "date": "2026-09-30",
+      "name": "Snowflake DCM Projects: DEFINE SEMANTIC VIEW GA, ATTACH MASKING POLICY preview",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-30-dcm-define-semantic-view-ga"
+     }
+    ]
+   },
+   {
+    "area": "Technical - Materials science",
+    "items": [
+     {
+      "date": "2026-10-04",
+      "name": "BVR-19 MOF makes hydrogen from water via a light-cleaved sulfur-sulfur linker bond (Oregon State, JACS)",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261001214017.htm"
+     },
+     {
+      "date": "2026-10-02",
+      "name": "Picosecond current pulses push NbN and YBCO toward the depairing limit (MPSD, Nature Physics)",
+      "url": "https://www.sciencedaily.com/releases/2026/09/260930225452.htm"
+     }
+    ]
+   },
+   {
+    "area": "DIY electronics",
+    "items": [
+     {
+      "date": "2026-10-04",
+      "name": "AVR laptop: ATmega2560, FreeRTOS, 24 fps video on an ST7920 LCD",
+      "url": "https://hackaday.com/2026/10/04/avr-laptop-pushes-the-limits-of-8-bit/"
+     },
+     {
+      "date": "2026-10-04",
+      "name": "BlobJump: ESP32-C3 + MPU-6050 motion belts as game controllers",
+      "url": "https://hackaday.com/2026/10/04/motion-control-via-belt/"
+     },
+     {
+      "date": "2026-10-04",
+      "name": "Cr:YAG passive Q-switch takes a tattoo-removal Nd:YAG laser to 1.3 MW peak (Les' Lab)",
+      "url": "https://hackaday.com/2026/10/04/upgrading-a-benchtop-laser-for-megawatt-power/"
+     }
+    ]
+   },
+   {
+    "area": "Data regulation",
+    "items": [
+     {
+      "date": "2026-10-03",
+      "name": "India blocks Bitchat under IT Act Section 69A",
+      "url": "https://techcrunch.com/2026/10/03/jack-dorseys-bitchat-disappears-from-app-stores-in-india-after-government-order/"
+     },
+     {
+      "date": "2026-10-04",
+      "name": "Super Intelligence Force task force announced (follows Super Intelligence executive order, presented Oct 4)",
+      "url": "https://techcrunch.com/2026/10/04/trump-unveils-his-new-super-intelligence-force/"
+     },
+     {
+      "date": "2026-10-02",
+      "name": "Italian Garante fines IQVIA EUR 7M over coded patient records",
+      "url": "https://www.mlex.com/mlex/data-privacy-security/articles/2533355/iqvia-receives-7m-italian-gdpr-fine-over-coded-patient-records"
+     }
+    ]
+   },
+   {
+    "area": "Claude for GTM engineering",
+    "items": [
+     {
+      "date": "2026-09-28",
+      "name": "Claude for Small Business growth workflows on the HubSpot connector (/speed-to-lead and four more)",
+      "url": "https://community.hubspot.com/t/more-leads-contacted-more-deals-logged-claude-for-small-business-launches-new-growth-workflows/160265"
+     },
+     {
+      "date": "2026-09-30",
+      "name": "Claude Sonnet 5.5 in Snowflake Cortex, public preview (follows Sonnet 5.5 launch, presented Sept 30)",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-30-claude-sonnet-5-5-preview"
+     },
+     {
+      "date": "2026-10-01",
+      "name": "Graphite study: Opus 5.5 writing tells ('this matters' 116x, em dashes down 99%)",
+      "url": "https://techcrunch.com/2026/10/01/opus-5-5-loves-to-tell-you-this-matters-and-other-ai-writing-tells/"
+     }
+    ]
+   }
+  ],
+  "title": "Bug Bounties on Pause, Picosecond Supercurrents, and Speed-to-Lead",
+  "window": "Sep 25 to Oct 4"
+ },
+ {
+  "date": "2026-10-05",
+  "published_at": "2026-10-05_1242",
+  "window": "Sep 25 to Oct 4",
+  "title": "Local 125B models, session replay ruling, Models API line field",
+  "duration": "9:10",
+  "audio_url": "episodes/2026-10-05_1242.mp3",
+  "sections": [
+   {
+    "area": "Technical - AI/software",
+    "items": [
+     {
+      "name": "Strata: runs 125B-parameter Qwen3.8-Flash-Next on a 12 GB gaming GPU by caching experts in VRAM",
+      "date": "2026-10-04",
+      "url": "https://hackaday.com/2026/10/04/ai-on-your-gaming-pc/"
+     },
+     {
+      "name": "Snowflake Openflow gen 1 to gen 2 deployment and runtime migration GA",
+      "date": "2026-10-01",
+      "url": "https://docs.snowflake.com/release-notes/2026/other/2026-10-01-openflow-gen1-to-gen2-migration-ga"
+     },
+     {
+      "name": "Snowflake Native Apps: observability for Cortex Agents (orchestrator redaction, AI_METADATA vs AI_CONTENT sharing)",
+      "date": "2026-10-02",
+      "url": "https://docs.snowflake.com/release-notes/2026/other/2026-10-02-native-apps-agent-observability"
+     },
+     {
+      "name": "Matthew Green: Is sandboxing sufficient to contain rogue agents? (cross-agent worm model)",
+      "date": "2026-09-30",
+      "url": "https://blog.cryptographyengineering.com/2026/09/30/is-sandboxing-sufficient-to-contain-rogue-agents/"
+     }
+    ]
+   },
+   {
+    "area": "Technical - Materials science",
+    "items": [
+     {
+      "name": "Review: spectrally engineered materials for personal thermoregulation (NTU / Hsu group, Nature Reviews Materials)",
+      "date": "2026-09-29",
+      "url": "https://www.nature.com/articles/s41578-026-00962-y"
+     },
+     {
+      "name": "Review: engineering magnetic soft materials for biomedical applications (CUHK, Nature Reviews Materials)",
+      "date": "2026-10-02",
+      "url": "https://www.nature.com/articles/s41578-026-00963-x"
+     },
+     {
+      "name": "Masked AAV vectors unmasked by protease, near-infrared light or ROS (Peking University, Nature Materials)",
+      "date": "2026-09-29",
+      "url": "https://www.nature.com/articles/s41563-026-02724-1"
+     }
+    ]
+   },
+   {
+    "area": "DIY electronics",
+    "items": [
+     {
+      "name": "AMT630A OSD chip in cheap composite monitors driven over I2C from an ESP32 (Mike Ogrinz, Arduino library)",
+      "date": "2026-10-03",
+      "url": "https://hackaday.com/2026/10/03/own-the-osd-chip-in-your-cheap-composite-monitor/"
+     },
+     {
+      "name": "Smallest internet radio: ESP32-C3 + PCM5102A I2S DAC (Milen)",
+      "date": "2026-10-02",
+      "url": "https://hackaday.com/2026/10/02/is-this-the-smallest-internet-radio/"
+     },
+     {
+      "name": "Electronic busy board: PIC18F67K40, multiplexed LEDs, interrupt-driven low-power firmware",
+      "date": "2026-10-02",
+      "url": "https://hackaday.com/2026/10/02/electronic-busy-board-is-fun-for-kids-and-hackers/"
+     }
+    ]
+   },
+   {
+    "area": "Data regulation",
+    "items": [
+     {
+      "name": "W.D. Wash. dismisses federal wiretap claims against Zillow and Microsoft over Clarity session replay",
+      "date": "2026-10-01",
+      "url": "https://www.mlex.com/mlex/data-privacy-security/articles/2532838/zillow-microsoft-get-us-wiretapping-claims-dismissed"
+     },
+     {
+      "name": "Japan PIPC proposes conditions for consent-free use of personal data for AI development and statistics",
+      "date": "2026-10-01",
+      "url": "https://www.mlex.com/mlex/data-privacy-security/articles/2532506/japan-proposes-strict-rules-for-ai-statistical-data-use-without-consent"
+     },
+     {
+      "name": "UK Information Commission formally replaces the ICO; staff protest on day one",
+      "date": "2026-09-30",
+      "url": "https://www.mlex.com/mlex/data-privacy-security/articles/2531937/uk-privacy-watchdog-s-hopes-of-fresh-start-blighted-by-staff-action-on-day-one"
+     },
+     {
+      "name": "Hamburg DPA: OpenAI's planned ChatGPT ad profiling in Europe raises substantial privacy risks",
+      "date": "2026-10-02",
+      "url": "https://www.mlex.com/mlex/data-privacy-security/articles/2533133/openai-s-planned-chatgpt-ad-profiling-raises-privacy-risks-hamburg-watchdog-says"
+     }
+    ]
+   },
+   {
+    "area": "Claude for GTM engineering",
+    "items": [
+     {
+      "name": "Claude Models API adds a `line` field to GET /v1/models",
+      "date": "2026-10-01",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview"
+     }
+    ]
+   }
+  ]
+ }
+]

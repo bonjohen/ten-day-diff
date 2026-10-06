@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Ten-Day Diff</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: single reading column; newest episode opens expanded, older ones collapse into a dated log. */
+:root{
+  --bg:#f5f6f3; --surface:#ffffff; --fg:#1d2320; --muted:#5d6862; --line:#dde2dd; --accent:#1f6f5c; --accent-soft:#e3f0eb;
+  --display:"Fraunces",Georgia,serif; --body:"IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#121614; --surface:#1a201d; --fg:#e4e9e5; --muted:#9aa6a0; --line:#2b3430; --accent:#5cc2a4; --accent-soft:#1d302a; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121614; --surface:#1a201d; --fg:#e4e9e5; --muted:#9aa6a0; --line:#2b3430; --accent:#5cc2a4; --accent-soft:#1d302a; color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.55 var(--body);padding-inline:16px;padding-block:32px 48px}
+.wrap{max-width:720px;margin:0 auto;display:grid;gap:28px}
+header{display:grid;gap:6px}
+h1{font:600 clamp(28px,6vw,40px)/1.1 var(--display);margin:0;text-wrap:balance}
+.sub{color:var(--muted);margin:0;max-width:60ch}
+.label{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.ep{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px;display:grid;gap:14px;min-width:0}
+.ep-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 16px}
+.ep h2{font:600 22px/1.25 var(--display);margin:0;text-wrap:balance}
+.meta{font:400 13px/1 var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+audio{width:100%}
+.actions{display:flex;flex-wrap:wrap;gap:10px}
+.btn{font:500 13px/1 var(--body);color:var(--accent);background:var(--accent-soft);border-radius:6px;padding:9px 12px;text-decoration:none}
+.btn:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.area{display:grid;gap:6px}
+.area ul{margin:0;padding-left:18px;display:grid;gap:4px}
+.area a{color:var(--fg);text-decoration-color:var(--line);text-underline-offset:3px}
+.area a:hover{text-decoration-color:var(--accent)}
+.d{font:400 12px var(--mono);color:var(--muted);white-space:nowrap}
+details.ep>summary{cursor:pointer;list-style:none}
+details.ep>summary::-webkit-details-marker{display:none}
+details.ep:not([open]){gap:0}
+.empty{color:var(--muted);border:1px dashed var(--line);border-radius:10px;padding:24px}
+h3.log{font:600 16px var(--display);margin:8px 0 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="label">Daily · 6:00 am Pacific</span>
+    <h1>The Ten-Day Diff</h1>
+    <p class="sub">Each morning, new items from the prior ten days across AI and software, materials science, DIY electronics, data regulation, and Claude for GTM engineering. Nothing repeats from an earlier episode.</p>
+  </header>
+  <main id="list"><p class="empty">Episodes appear here after each morning run, each with its audio and topic list.</p></main>
+</div>
+
+<script>
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmtDate=d=>{try{return new Date(d+"T12:00:00").toLocaleDateString(undefined,{weekday:"short",month:"short",day:"numeric",year:"numeric"})}catch{return d}};
+function epHTML(e,open){
+  const src=e.audio_url||(e.audio_asset_id?"/_blob/"+e.audio_asset_id:"");
+  const areas=(e.sections||[]).map(s=>`<div class="area"><span class="label">${esc(s.area)}</span><ul>${(s.items||[]).map(i=>`<li>${i.url?`<a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.name)}</a>`:esc(i.name)} <span class="d">${esc(i.date||"")}</span></li>`).join("")}</ul></div>`).join("");
+  const head=`<div class="ep-head"><h2>${esc(e.title||"Episode")}</h2><span class="meta">${esc(fmtDate(e.date))}${e.window?" · covers "+esc(e.window):""}${e.duration?" · "+esc(e.duration):""}</span></div>`;
+  const body=`${src?`<audio controls preload="none" src="${esc(src)}"></audio><div class="actions"><a class="btn" href="${esc(src)}" target="_blank" rel="noopener">Open MP3</a></div>`:""}${areas}`;
+  return open?`<article class="ep">${head}${body}</article>`:`<details class="ep"><summary>${head}</summary>${body}</details>`;
+}
+(async()=>{
+  const list=document.getElementById("list");
+  try{
+    const r=await fetch("episodes.json",{cache:"no-store"}); if(!r.ok)return;
+    const key=e=>String(e.published_at||e.date||"");
+    const eps=(await r.json()).sort((a,b)=>key(b).localeCompare(key(a)));
+    if(!eps.length)return;
+    list.innerHTML=epHTML(eps[0],true)+(eps.length>1?`<h3 class="log">Earlier episodes</h3>`+eps.slice(1).map(e=>epHTML(e,false)).join(""):"");
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
