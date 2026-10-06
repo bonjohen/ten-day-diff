@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Voices, printed titanium, and California&#x27;s deletion rule · The Ten-Day Diff</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#f5f6f3;--fg:#1d2320;--muted:#5d6862;--line:#dde2dd;--accent:#1f6f5c;
+--display:"Fraunces",Georgia,serif;--body:"IBM Plex Sans",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace}
+@media (prefers-color-scheme:dark){:root{--bg:#121614;--fg:#e4e9e5;--muted:#9aa6a0;--line:#2b3430;--accent:#5cc2a4;color-scheme:dark}}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 var(--body);padding:32px 16px 64px}
+main{max-width:660px;margin:0 auto}
+.label{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font:600 clamp(26px,6vw,36px)/1.15 var(--display);margin:8px 0 6px;text-wrap:balance}
+.meta{font:400 13px/1.4 var(--mono);color:var(--muted);margin:0 0 28px}
+h2{font:600 21px/1.3 var(--display);margin:36px 0 8px;padding-top:20px;border-top:1px solid var(--line)}
+p{margin:0 0 16px}
+ul{padding-left:20px} li{margin:4px 0;font-size:15px}
+a{color:var(--accent);text-underline-offset:3px}
+.back{font:500 13px var(--body);text-decoration:none}
+</style>
+</head>
+<body>
+<main>
+<a class="back" href="../">← All episodes</a>
+<p class="label" style="margin-top:24px">The Ten-Day Diff · script</p>
+<h1>Voices, printed titanium, and California&#x27;s deletion rule</h1>
+<p class="meta">Sep 30, 2026 · covers Sep 20 to Sep 29</p>
+<p>This is The Ten-Day Diff for Wednesday, September 30th.</p>
+<p>This episode covers September 20th through September 29th. The last show went out yesterday evening, so everything here is new since then.</p>
+<p>Five areas, 14 items. Let&#x27;s go.</p>
+<h2>Technical - AI/software</h2>
+<p>AI and software first, and two of the three items are about voices.</p>
+<p>On September 23rd, Google released Gemini 3.8 Flash TTS and Flash-Lite TTS, two text-to-speech models in the Gemini API and AI Studio.</p>
+<p>Flash is the one you steer closely.</p>
+<p>Flash-Lite is for cheap volume.</p>
+<p>Together they cover more than a hundred languages and over 2,000 stock voices.</p>
+<p>You can describe a voice in a sentence, or clone one from 30 seconds of audio, and generate hours in a single request.</p>
+<p>Five days later, on September 28th, ElevenLabs answered with Eleven v4 and v4 Turbo.</p>
+<p>90+ languages, cloning from about 10 seconds of audio, and median latency near 100 milliseconds for v4.</p>
+<p>Why this matters to you.</p>
+<p>A show like this one is built on an open-source voice model.</p>
+<p>Both of these are now serious options if you ever want a better narrator, or spoken summaries coming out of a sales pipeline.</p>
+<p>Also on the 28th, Git 2.56.</p>
+<p>New commands include git add --resolved, git history drop and git branch --delete-merged.</p>
+<p>On one large monorepo, finding a merge base went from about seven tenths of a second to one hundredth.</p>
+<p>A new repack mode cut one pack file from 558 MB to 164 MB.</p>
+<p>If your repos have grown fat with generated code, that&#x27;s worth a look.</p>
+<h2>Technical - Materials science</h2>
+<p>In Nature Materials on September 25, a City University of Hong Kong group reported a 3D-printed titanium alloy, titanium with 7.5% aluminum and 3.3% chromium by weight.</p>
+<p>They screened 118 candidate alloys with an XGBoost model, then printed the winner by laser powder bed fusion. It yields at about 1,500 MPa, breaks above 1,700, and still stretches about 7.5% before necking.</p>
+<p>The strength comes from stacking bands under 10 nanometers wide.</p>
+<p>It&#x27;s a clean example of a small machine learning model picking the composition and the printing process setting the microstructure.</p>
+<p>On September 22 in Nature Energy, the University of Delaware and the startup RepAir described a direct air capture cell built from two nickel hydroxide electrodes and a hydroxide exchange membrane.</p>
+<p>No heating and cooling of sorbents. It&#x27;s electrochemical.</p>
+<p>The pilot uses about 132 kilojoules per mole of carbon dioxide. A lab unit ran for 5,000 hours, and the authors see a path under $100 a ton.</p>
+<p>That&#x27;s aggressive, but the durability number is real.</p>
+<p>And on September 23, also in Nature Materials, spectroscopy on lanthanum praseodymium nickelate thin films tied superconductivity to coherent bonding between the two nickel layers through oxygen.</p>
+<p>Tune the oxygen content or the strain even a little and superconductivity disappears.</p>
+<p>The takeaway for film growers: the window is narrow, and now we know what defines it.</p>
+<h2>DIY electronics</h2>
+<p>On September 22nd, Nordic announced the nRF54LC10A.</p>
+<p>It&#x27;s a tiny Bluetooth LE and Thread chip with a 128 MHz Cortex-M33, a RISC-V coprocessor, and a hibernation current under 50 nanoamps.</p>
+<p>The smallest package is under 2 by 2.5 mm.</p>
+<p>The dev kit isn&#x27;t due until early 2027, so this is one to plan around, not buy.</p>
+<p>On September 21st, Realtek showed the RTL8773J, a Bluetooth 7 ready microcontroller with a Cortex-M55, a Cortex-M33, and two audio DSPs.</p>
+<p>There&#x27;s no public SDK or board yet.</p>
+<p>Watch it if you do audio projects.</p>
+<p>And on September 24th, Quectel&#x27;s SE200ZC module, 40 mm square, built on the Rockchip RV1126B.</p>
+<p>It has a 3 TOPS NPU, takes up to five 12-megapixel cameras, and has Gigabit Ethernet and two CAN FD ports.</p>
+<p>It runs Debian, and samples are out now.</p>
+<p>For a multi-camera edge vision build, that&#x27;s a lot in one part.</p>
+<h2>Data regulation</h2>
+<p>The big one is California.</p>
+<p>On September 27th, Governor Newsom signed SB 923 and vetoed AB 1542.</p>
+<p>SB 923 extends CCPA deletion rights to data a company bought, licensed, or appended, not only data it collected itself.</p>
+<p>It takes effect January 1, 2027.</p>
+<p>He also signed AB 883, which cuts the data broker deletion deadline to 30 days. AB 1542 would have banned selling sensitive personal data outright. He called that a step too far.</p>
+<p>For you, the deletion change matters most. If your pipeline enriches contacts from third-party sources, those appended records now fall under deletion requests.</p>
+<p>One more note.</p>
+<p>SB 690, the CIPA pixel tracking reform we covered on September 28, was still waiting on the governor as of that day.</p>
+<p>The deadline is today.</p>
+<p>On September 21, Ireland&#x27;s Data Protection Commission fined Google 403 million euros over location data in Web &amp; App Activity and Location History, covering 2018 to 2020.</p>
+<p>Google has six months to comply.</p>
+<p>The same day, the European Data Protection Board adopted guidelines on administrative fines.</p>
+<p>It&#x27;s one five-step method for every regulator in the EU, with 14 worked examples.</p>
+<p>Comments are open until November 13.</p>
+<p>It makes fine sizes easier to predict, which is useful when you&#x27;re weighing risk on a European data flow.</p>
+<h2>Claude for GTM engineering</h2>
+<p>Claude Code 2.1.285 shipped September 29th, and it&#x27;s a plugin release.</p>
+<p>There&#x27;s a new command, claude plugin configure, and plugin install now takes config values on the command line. So a plugin that bundles its own MCP server, say for HubSpot or Snowflake, can start already configured instead of silently skipping it. Plugins now tell you when a bundled server still needs setup.</p>
+<p>For admins, there&#x27;s a new allowedProviders setting, and claude -p plus the Agent SDK now default to auto mode on third-party providers or with telemetry off.</p>
+<p>If you run headless pipeline jobs, check that default.</p>
+<p>Background shell commands also now time out after 30 minutes unless you raise it.</p>
+<p>On September 23, following the Claude Marketplace launch we covered on September 28, Anthropic said Snowflake&#x27;s inference API is sold through the marketplace.</p>
+<p>Claude can run against data that stays inside Snowflake, and existing Anthropic commitments can count toward Snowflake spend.</p>
+<p>ThoughtSpot&#x27;s Spotter Analyst also joined the connector directory.</p>
+<p>Given your stack, this is the most directly useful item today.</p>
+<p>And in the same September 29th release, Claude Tag in Slack opened direct messages to Cowork seats on Enterprise plans without needing a Claude Code seat.</p>
+<p>There&#x27;s also a cache setting that keeps your connectors&#x27; tool lists across cloud session restarts.</p>
+<p>That&#x27;s the diff. Sources are on the episode page. Back in ten days, or sooner.</p>
+<h2>Sources</h2>
+<ul>
+<li><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/">Gemini 3.8 Flash TTS and Flash-Lite TTS</a></li>
+<li><a href="https://elevenlabs.io/blog/eleven-v4">ElevenLabs Eleven v4 and v4 Turbo</a></li>
+<li><a href="https://github.blog/open-source/git/highlights-from-git-2-56/">Git 2.56</a></li>
+<li><a href="https://www.nature.com/articles/s41563-026-02749-6">3D-printed Ti-7.5Al-3.3Cr with sub-10-nm stacking bands</a></li>
+<li><a href="https://www.nature.com/articles/s41560-026-02129-z">Symmetric Ni(OH)2 electrochemical cell for direct air capture</a></li>
+<li><a href="https://www.nature.com/articles/s41563-026-02750-z">Interlayer hybridization drives superconductivity in bilayer nickelate films</a></li>
+<li><a href="https://www.cnx-software.com/2026/09/22/nordic-nrf54lc10a-a-tiny-bluetooth-le-and-802-15-4-soc-with-sub-50-na-hibernation-mode/">Nordic nRF54LC10A</a></li>
+<li><a href="https://www.cnx-software.com/2026/09/21/realtek-rtl8773j-a-bluetooth-7-ready-cortex-m55-m33-microcontroller-with-hdt-support/">Realtek RTL8773J</a></li>
+<li><a href="https://www.cnx-software.com/2026/09/24/quectel-se200zc-ap-smart-module-supports-up-to-five-cameras-with-rockchip-rv1126b-bj-soc/">Quectel SE200ZC-AP (Rockchip RV1126B)</a></li>
+<li><a href="https://news.bloomberglaw.com/privacy-and-data-security/newsom-vetoes-ban-of-sensitive-data-sales-expands-privacy-laws">California SB 923 signed, AB 1542 vetoed (plus AB 883)</a></li>
+<li><a href="https://www.dataprotection.ie/en/news-media/latest-news/data-protection-commission-fines-google-eu403-million-following-inquiry-googles-processing-location">Irish DPC fines Google EUR 403M over location data</a></li>
+<li><a href="https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en">EDPB Guidelines on Administrative Fines</a></li>
+<li><a href="https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md">Claude Code 2.1.285: plugin configure, preconfigured .mcpb servers, allowedProviders, headless auto mode</a></li>
+<li><a href="https://claude.com/blog/how-coderabbit-power-digital-and-thoughtspot-scale-with-snowflake-and-vercel-on-claude-marketplace">Snowflake inference API on Claude Marketplace + ThoughtSpot Spotter connector</a></li>
+<li><a href="https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md">Claude Tag DMs for Cowork seats + MCP_DISCOVERY_CACHE</a></li>
+</ul>
+</main>
+</body>
+</html>

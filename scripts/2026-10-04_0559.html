@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Decisions, dark cavities, and Flock in court · The Ten-Day Diff</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#f5f6f3;--fg:#1d2320;--muted:#5d6862;--line:#dde2dd;--accent:#1f6f5c;
+--display:"Fraunces",Georgia,serif;--body:"IBM Plex Sans",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace}
+@media (prefers-color-scheme:dark){:root{--bg:#121614;--fg:#e4e9e5;--muted:#9aa6a0;--line:#2b3430;--accent:#5cc2a4;color-scheme:dark}}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 var(--body);padding:32px 16px 64px}
+main{max-width:660px;margin:0 auto}
+.label{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font:600 clamp(26px,6vw,36px)/1.15 var(--display);margin:8px 0 6px;text-wrap:balance}
+.meta{font:400 13px/1.4 var(--mono);color:var(--muted);margin:0 0 28px}
+h2{font:600 21px/1.3 var(--display);margin:36px 0 8px;padding-top:20px;border-top:1px solid var(--line)}
+p{margin:0 0 16px}
+ul{padding-left:20px} li{margin:4px 0;font-size:15px}
+a{color:var(--accent);text-underline-offset:3px}
+.back{font:500 13px var(--body);text-decoration:none}
+</style>
+</head>
+<body>
+<main>
+<a class="back" href="../">← All episodes</a>
+<p class="label" style="margin-top:24px">The Ten-Day Diff · script</p>
+<h1>Decisions, dark cavities, and Flock in court</h1>
+<p class="meta">Oct 4, 2026 · covers Sep 24 to Oct 3</p>
+<p>This is The Ten-Day Diff for Sunday, October 4th, covering September 24th through October 3rd.</p>
+<p>Everything here is new to the ledger.</p>
+<p>5 areas, 15 items.</p>
+<h2>Technical - AI/software</h2>
+<p>Cloudflare shipped its own decision models on October 1st, called Clef and Clef-flash.</p>
+<p>These are the classifier-style models that have been everywhere this month.</p>
+<p>You hand one a state and a typed question, and it returns probabilities over the allowed answers instead of prose.</p>
+<p>Clef is 27 billion parameters. Clef-flash is 9 billion, and both take a 64k context with image input.</p>
+<p>Cloudflare reports a median latency of about 209 milliseconds for Clef and under 39 for Flash.</p>
+<p>The weights are on Hugging Face under the Apache 2.0 license.</p>
+<p>For you, this is a cheap router or guardrail in front of a Claude agent.</p>
+<p>Lead triage, yes-or-no gates on a pipeline step, rubric scoring of call notes, all without spending frontier tokens.</p>
+<p>Also October 1st, Shopify introduced Canvas, a store builder driven by chat with its Sidekick assistant.</p>
+<p>The interesting part is that it renders the real theme code live, and Sidekick edits the theme files directly while taking screenshots to check its own work.</p>
+<p>Third-party themes, app blocks and translations are not supported yet, and it is desktop only.</p>
+<p>And one for your job title.</p>
+<p>On October 2nd, TechCrunch announced that Clay&#x27;s CEO, Kareem Amin, will give a Disrupt talk called &quot;The GTM Engineer: How I Created Tech&#x27;s Next Big Job Category.&quot;</p>
+<p>Disrupt runs October 13th to 15th in San Francisco.</p>
+<p>The piece cites roughly 100 GTM engineering listings a month, and Clay&#x27;s $115 million Series D at a $7.1 billion valuation.</p>
+<p>Worth knowing how the category is being described in public, since that is the language recruiters and buyers will repeat.</p>
+<h2>Technical - Materials science</h2>
+<p>A Nature paper, covered by ScienceDaily on October 3rd, strengthens a superconductor with nothing but its surroundings.</p>
+<p>A team at the University of Science and Technology of China, with Shanghai Jiao Tong and MIT, put six-layer niobium diselenide inside a terahertz dark cavity, which amplifies vacuum fluctuations.</p>
+<p>The critical temperature rose by up to 5.4%, and critical current and field improved near the transition.</p>
+<p>No pump laser. No drive. It is a clean demonstration that the electromagnetic environment is a tuning knob for a quantum material.</p>
+<p>From the University of Chicago, reported October 1st in Science Advances: a flat electronic band and charge order in iron 5 germanium telluride, a layered van der Waals magnet. Using laser angle-resolved photoemission on a 10-micron spot, they saw electrons moving very slowly, yet staying coherent up to about 100 kelvin.</p>
+<p>The magnetic interactions do not match what theory predicted, which makes this a useful stress test for models of correlated two-dimensional magnets.</p>
+<p>And in Nature Materials on September 25th, a Penn-led group built organic electrochemical transistors with artificial ion channels: hydrogen-bonded crown ether stacks inside a fluorinated polymer.</p>
+<p>Ions get through. Water mostly does not.</p>
+<p>Response time is about 1.3 microseconds, roughly 60 times faster than conventional devices, with 96% current retention after 28 days in physiological conditions.</p>
+<p>They used it to track dopamine in a rat brain.</p>
+<h2>DIY electronics</h2>
+<p>The headline from Hackaday on October 3rd: the ESP32 turns out to be a software-defined radio on its own.</p>
+<p>Two independent efforts, one from Espargos and one from a Reddit user, found an undocumented mode that taps the raw I/Q stream before the Wi-Fi modem.</p>
+<p>It works on 2.4 and 5 GHz depending on the chip, at up to 80 megasamples per second, though getting that data off the chip is the bottleneck.</p>
+<p>Bluetooth-only parts and the P4 are excluded.</p>
+<p>The repos are SoapyESPSDR and eSpDR.</p>
+<p>This is separate from LakeShark, presented October 2nd, which needed an external radio.</p>
+<p>The Avaota F2, updated on CNX Software October 2nd now that it is on sale, is a 40 by 22 millimeter RISC-V camera board.</p>
+<p>It uses an Allwinner V861 with a 1 TOPS neural processor, 4K H.265 encoding, and motor pins for pan, tilt, and zoom, at about $52.</p>
+<p>The catch: no Wi-Fi, and the documentation is in Chinese only.</p>
+<p>And a shop trick from October 3rd.</p>
+<p>Saheen Palayi cut solder paste stencils from soda cans, using a 3D-printed cutter to get a flat sheet and a fiber laser for the apertures.</p>
+<p>If you have laser access, that is a same-hour stencil for a prototype board.</p>
+<h2>Data regulation</h2>
+<p>Two developments on Flock Safety, following the Senate Judiciary hearing presented September 30th.</p>
+<p>On October 3rd, a federal judge in Tulsa, Sara Hill, ruled that a deputy&#x27;s warrantless search of Flock&#x27;s license plate database violated the Fourth Amendment.</p>
+<p>She called it &quot;indiscriminate mass surveillance&quot; and suppressed the evidence that followed.</p>
+<p>It is a district court ruling, so not binding elsewhere, but the reasoning is about passive collection on everyone, and that travels.</p>
+<p>The day before, October 2nd, Senator Sanders introduced the Ban Flock Act with Senator Merkley and Representative Ocasio-Cortez.</p>
+<p>It would bar federal agencies from using plate readers or their data, with exceptions for tolls and for uses Congress approves under a 48-hour retention cap.</p>
+<p>It also conditions federal grants on state and local bans.</p>
+<p>On September 29th, the White House issued an executive order titled &quot;Inaugurating the Era of Super Intelligence.&quot;</p>
+<p>Federal agencies are to say &quot;super intelligence&quot; or &quot;SI&quot; instead of &quot;AI&quot; in non-statutory communications. The legal definition does not change, and a proposed statutory definition is due in 60 days.</p>
+<p>Practically, expect two vocabularies in federal documents.</p>
+<p>And two IAPP analyses that land squarely on your stack.</p>
+<p>One, from October 1st, argues that fundamental rights impact assessments under the EU AI Act should assess the connectors, because what an agent can reach matters more than which model it is.</p>
+<p>The other, from September 30th, notes that MCP now has enterprise-managed authorization, but still no standard for tracing and logging.</p>
+<p>If you build on HubSpot, Gong and Snowflake connectors, keep your own audit trail of tool calls.</p>
+<h2>Claude for GTM engineering</h2>
+<p>Claude Code 2.1.289 shipped October 3rd.</p>
+<p>The new piece is agent.spawn for teammates in mods, with one agent ID across plugin hook events, and idle and waiting states in the agent list.</p>
+<p>The rest is fixes, and several are permission fixes worth having.</p>
+<p>Bash deny rules that were skipped behind an environment variable prefix, Read deny rules that missed symlinked files, and a user plugin that could rewrite the descriptions of a managed MCP server&#x27;s sign-in tools.</p>
+<p>Mods also failed to load in the first session after an upgrade.</p>
+<p>If you ship plugins, update.</p>
+<p>Second, a Claude blog post from September 24th on Opus 5.5 and long sessions, following the Opus 5.5 launch presented September 28th.</p>
+<p>What is new there is the caching behavior in Claude Code.</p>
+<p>API key and cloud provider users can set a one-hour cache lifetime. Changing effort mid-session no longer resets the cache, and forked subagents inherit the parent&#x27;s cache.</p>
+<p>Cached reads are priced 60% lower than on Opus 5.</p>
+<p>For long pipeline sessions with heavy context, that is where the savings are.</p>
+<p>That&#x27;s the diff. 15 items, all logged. Back tomorrow.</p>
+<h2>Sources</h2>
+<ul>
+<li><a href="https://developers.cloudflare.com/changelog/product/workers-ai/">Cloudflare Clef and Clef-flash decision models</a></li>
+<li><a href="https://techcrunch.com/2026/10/01/shopify-debuts-canvas-a-way-to-build-online-stores-by-chatting-with-ai/">Shopify Canvas AI store builder</a></li>
+<li><a href="https://techcrunch.com/2026/10/02/techcrunch-disrupt-2026-clays-kareem-amin-on-the-rise-of-the-gtm-engineer/">Clay&#x27;s Kareem Amin on the rise of the GTM engineer (Disrupt 2026)</a></li>
+<li><a href="https://www.sciencedaily.com/releases/2026/09/260930225456.htm">NbSe2 superconductivity enhanced in a terahertz dark cavity</a></li>
+<li><a href="https://www.sciencedaily.com/releases/2026/09/260929053548.htm">Flat band and charge order in Fe5GeTe2</a></li>
+<li><a href="https://www.nature.com/articles/s41563-026-02745-w">Water-stable OECTs with supramolecular artificial ion channels</a></li>
+<li><a href="https://hackaday.com/2026/10/03/the-esp32-an-sdr-in-itself/">ESP32 as an SDR via undocumented I/Q mode</a></li>
+<li><a href="https://www.cnx-software.com/2026/10/02/avaota-f2-allwinner-v861-risc-v-sbc-targets-ai-cameras-with-ptz-and-audio-support/">Avaota F2 Allwinner V861 RISC-V camera SBC</a></li>
+<li><a href="https://hackaday.com/2026/10/03/a-good-diy-solder-stencil-begins-with-a-cleanly-sliced-soda-can/">Soda-can solder stencils with a fiber laser</a></li>
+<li><a href="https://techcrunch.com/2026/10/03/federal-judge-calls-flock-indiscriminate-mass-surveillance/">Federal judge rules warrantless Flock search unconstitutional</a></li>
+<li><a href="https://techcrunch.com/2026/10/02/sanders-introduces-bill-to-ban-the-federal-government-from-using-flock/">Ban Flock Act introduced</a></li>
+<li><a href="https://iapp.org/news/a/ai-by-any-other-name-white-house-directs-federal-agencies-to-enter-the-era-of-super-intelligence">Executive order: Inaugurating the Era of Super Intelligence</a></li>
+<li><a href="https://iapp.org/news/a/the-fria-is-coming-assess-ai-connectors-not-just-ai-systems">IAPP: assess AI connectors in FRIAs; MCP logging gap</a></li>
+<li><a href="https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md">Claude Code 2.1.289</a></li>
+<li><a href="https://claude.com/blog/claude-opus-5-5-built-for-coding-sessions-that-use-more-context">Claude Code caching changes for long sessions (Opus 5.5 blog)</a></li>
+</ul>
+</main>
+</body>
+</html>

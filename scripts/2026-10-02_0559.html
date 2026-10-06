@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mods, Argon, and the robo-boss ban · The Ten-Day Diff</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#f5f6f3;--fg:#1d2320;--muted:#5d6862;--line:#dde2dd;--accent:#1f6f5c;
+--display:"Fraunces",Georgia,serif;--body:"IBM Plex Sans",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace}
+@media (prefers-color-scheme:dark){:root{--bg:#121614;--fg:#e4e9e5;--muted:#9aa6a0;--line:#2b3430;--accent:#5cc2a4;color-scheme:dark}}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 var(--body);padding:32px 16px 64px}
+main{max-width:660px;margin:0 auto}
+.label{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font:600 clamp(26px,6vw,36px)/1.15 var(--display);margin:8px 0 6px;text-wrap:balance}
+.meta{font:400 13px/1.4 var(--mono);color:var(--muted);margin:0 0 28px}
+h2{font:600 21px/1.3 var(--display);margin:36px 0 8px;padding-top:20px;border-top:1px solid var(--line)}
+p{margin:0 0 16px}
+ul{padding-left:20px} li{margin:4px 0;font-size:15px}
+a{color:var(--accent);text-underline-offset:3px}
+.back{font:500 13px var(--body);text-decoration:none}
+</style>
+</head>
+<body>
+<main>
+<a class="back" href="../">← All episodes</a>
+<p class="label" style="margin-top:24px">The Ten-Day Diff · script</p>
+<h1>Mods, Argon, and the robo-boss ban</h1>
+<p class="meta">Oct 2, 2026 · covers Sep 22 to Oct 1</p>
+<p>This is The Ten-Day Diff for Friday, October 2nd, covering September 22nd through October 1st.</p>
+<p>Everything from the last four episodes is off the table, so today is mostly the last 48 hours of the window.</p>
+<p>13 items across 5 areas.</p>
+<h2>Technical - AI/software</h2>
+<p>First area, AI and software.</p>
+<p>Google released Gemini 4 Argon on September 30th and called it its most powerful model yet.</p>
+<p>The pitch is long-horizon work: finding, validating, and patching software vulnerabilities on its own, plus debugging and codebase migrations. Google cites Vals AI numbers that put it ahead of GPT-6 Astra and Anthropic&#x27;s Fable and Opus models.</p>
+<p>The catch is access.</p>
+<p>Right now, it only goes to selected security partners through Google&#x27;s Fairwind program, with no public pricing and no API date.</p>
+<p>So for you this is a benchmark headline, and not something you can route a workload to yet.</p>
+<p>On October 1st, arXiv, the preprint server, capped every submitter at two new papers per calendar month, with at most three active submissions at once.</p>
+<p>September brought just over 40,000 submissions, about double September 2024, and the cs.AI category is up six times in two years. arXiv names thin papers, salami slicing and dense AI-written papers as the cause. Rejected papers count against the cap.</p>
+<p>Co-authors are not affected when someone else submits. If you track preprints in materials or machine learning, expect more of the volume to move to other servers, or straight to journals.</p>
+<h2>Technical - Materials science</h2>
+<p>Three items, all from the back end of the window.</p>
+<p>First, a Caltech-led team reported in Nature on September 30th the direct measurement of conformal field theory spectra in a quantum simulator.</p>
+<p>They lined up strontium atoms in optical tweezers, drove them to Rydberg states, and used a new method they call many-body modulation spectroscopy to read off energy levels. The ratios match what theory predicted about 40 years ago for the Ising and tricritical Ising models.</p>
+<p>It matters because it is a spectroscopy tool for critical points in systems nobody can compute classically.</p>
+<p>Second, Nature Materials, September 30th, from Xi&#x27;an Jiaotong University: an organic photosensor that behaves like an event camera pixel in one layer.</p>
+<p>The blend is a polymer donor that lets ions in, with the acceptor Y6. Light gives a fast current spike, then ions in the donor shut down further extraction, so the device reports changes and ignores steady light.</p>
+<p>Dynamic range is above 75 decibels, and a small bias, under a quarter of a volt, sets the gain.</p>
+<p>It is a clean example of mixed ionic and electronic conduction doing computation in the material itself.</p>
+<p>Third, a Comment in Nature Reviews Materials on October 1st by Jun Ding and Evan Ma questions the push for refractory high-entropy alloys.</p>
+<p>Their point: an oxide-dispersion-strengthened tantalum alloy already holds useful tensile strength above 2,000 degrees Celsius. So piling on more elements is not the goal. They argue for the right complexity, in the right form, for the right mechanism.</p>
+<p>Worth reading if you follow alloy design, because it is a pushback from inside the field.</p>
+<h2>DIY electronics</h2>
+<p>LakeShark, covered October 1st, is open-source firmware that turns a LilyGO T-Display P4 into a handheld software-defined radio scanner.</p>
+<p>Plug an RTL-SDR dongle into the USB port, and the ESP32-P4 does the signal processing itself: P25 trunking, FM and AM, pager decoding, and aircraft ADS-B at 1090 MHz. No Raspberry Pi or laptop in the loop. It is GPL version 3 and the hardware runs about $250.</p>
+<p>This is a good marker for how much DSP a P4 can carry.</p>
+<p>Also October 1st, Raspberry Pi launched a $30 Smart Display Module carrier for the Compute Module 5.</p>
+<p>It follows Intel&#x27;s Smart Display Module form factor, so it slots into signage displays and kiosks, starting with Sharp.</p>
+<p>You get HDMI 2.0, Gigabit Ethernet, an M.2 PCI Express socket, and a production promise through January 2036.</p>
+<p>And a small one from Hackaday on October 1st.</p>
+<p>A maker replaced the controllers in Elgato Key Lights with ESP32-C3 boards running Rust firmware, which gives the lights native Matter support.</p>
+<p>Useful as a reference build if you want Matter on a C3 without the vendor SDK in C.</p>
+<h2>Data regulation</h2>
+<p>California first.</p>
+<p>On September 30th, Governor Newsom signed 13 AI bills. The lead one is SB 947, the No Robo Bosses Act.</p>
+<p>Employers cannot use an AI system as the only basis for firing or disciplining someone. A human has to review the decision against other evidence, and workers must be told when these systems are used.</p>
+<p>It takes effect July 1, 2027. AB 1883, in the same batch, bans workplace tools that infer emotional state or collect neural data.</p>
+<p>In the same round, he vetoed SB 1130, which would have penalized secret recording with smart glasses and required recording indicators by 2028.</p>
+<p>He said the device definition was too broad, and existing law already covers it. This follows the SB 690 signing, presented October 1st, and the SB 923 and AB 1542 decisions, presented September 30th, and it closes out the session.</p>
+<p>For you, the employment bills are the ones that touch anything that scores people automatically, including rep performance scoring from call data.</p>
+<p>Second, on October 1st, a federal judge dismissed the long-running suit over Meta&#x27;s tracking pixel on the California DMV website.</p>
+<p>Per MLex and Law360, the judge found Meta did not receive sensitive information about the named plaintiffs.</p>
+<p>That is the practical lesson for pixel cases.</p>
+<p>But plaintiffs need to show what data about them actually moved.</p>
+<p>Third, also October 1st.</p>
+<p>The UK Information Commissioner&#x27;s Office said leading AI developers are changing their UK products to be clearer about training data sources, and to help people exercise information rights. The office is also questioning Meta and OpenAI about unintended model behavior, opens a call for evidence on agentic AI this month, and plans to consult in early 2027 on a statutory code for AI and automated decision-making.</p>
+<h2>Claude for GTM engineering</h2>
+<p>Two items, and both are close to your work.</p>
+<p>On October 1st, Anthropic shipped mods for Claude Code in version 2.1.287.</p>
+<p>A mod is a small TypeScript function that hooks an event and runs before it, after it, or in place of it.</p>
+<p>Mods can rewrite a prompt, block or change a tool call, approve or deny a permission, redact secrets, or add UI. They ship inside plugins and work in the command line and the desktop app. Two cautions.</p>
+<p>Mods are not sandboxed, so they have the same machine access as Claude Code. And on Team and Enterprise plans, a built-in mod named sec-default loads first.</p>
+<p>For your plugins, this is the place to put guardrails that used to live in prompts, like blocking a write to HubSpot unless a dry run passed. The same release adds a prompt_text field to the OpenTelemetry user prompt event, so mask it wherever you mask prompt.</p>
+<p>It also adds URL prompts from MCP servers.</p>
+<p>If a server stops connecting, set bare elicitation capability to true in its config.</p>
+<p>On September 30th, Anthropic&#x27;s own sales development lead described how they rebuilt inbound with Claude Managed Agents. A buying agent sits on the contact sales page, the pricing page, and inside the product.</p>
+<p>It asks about usage, then recommends a plan and seat count.</p>
+<p>It handles thousands of conversations a day. Leads it escalates convert more than twice as often as form fills, and deals close about five days faster.</p>
+<p>The lessons are the useful part.</p>
+<p>A goal-based prompt beat rigid rules, and tracking why conversations escalated cut handoffs roughly in half.</p>
+<p>That is a direct template for an inbound qualification agent feeding your pipeline.</p>
+<p>That&#x27;s the diff. Next episode picks up from October 2nd.</p>
+<h2>Sources</h2>
+<ul>
+<li><a href="https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/">Google Gemini 4 Argon (limited to Fairwind security partners)</a></li>
+<li><a href="https://blog.arxiv.org/2026/10/01/updated-rate-limit-policy/">arXiv caps submitters at two papers per month</a></li>
+<li><a href="https://www.sciencedaily.com/releases/2026/09/260928100554.htm">Conformal field theory spectra measured in a Rydberg quantum simulator (Caltech)</a></li>
+<li><a href="https://www.nature.com/articles/s41563-026-02747-8">Event-driven organic photosensor with ionic-mediated inhibition (PgBDT-T:Y6)</a></li>
+<li><a href="https://www.nature.com/articles/s41578-026-00969-5">Reassessing refractory high-entropy alloys (Ding and Ma comment)</a></li>
+<li><a href="https://www.cnx-software.com/2026/10/01/lakeshark-firmware-turns-lilygo-t-display-p4-into-a-handheld-esp32-p4-sdr-scanner/">LakeShark ESP32-P4 SDR scanner firmware for LilyGO T-Display P4</a></li>
+<li><a href="https://www.cnx-software.com/2026/10/01/30-raspberry-pi-smart-display-module-for-cm5-targets-digital-signage-displays-and-kiosks/">Raspberry Pi Smart Display Module for CM5 ($30)</a></li>
+<li><a href="https://hackaday.com/2026/10/01/elgato-key-lights-get-matter-upgrade/">Elgato Key Light retrofit: ESP32-C3 Rust firmware with Matter</a></li>
+<li><a href="https://thenextweb.com/news/no-robo-bosses-act-newsom-ai-bills-smart-glasses-veto">California SB 947 No Robo Bosses Act and AB 1883 signed; SB 1130 smart glasses bill vetoed</a></li>
+<li><a href="https://www.mlex.com/mlex/data-privacy-security/articles/2532905/meta-wins-dismissal-of-tracking-lawsuit-over-calif-dmv-data">Meta wins dismissal of California DMV pixel tracking suit</a></li>
+<li><a href="https://www.mlex.com/mlex/data-privacy-security/articles/2532763/ai-companies-commit-to-uk-changes-on-transparency-information-rights-ico-says">UK ICO: AI developer transparency commitments, agentic AI call for evidence</a></li>
+<li><a href="https://claude.com/blog/claude-code-mods">Claude Code mods (Claude Code 2.1.287)</a></li>
+<li><a href="https://claude.com/blog/how-anthropics-sales-team-rebuilt-inbound-with-claude-managed-agents">Anthropic sales team rebuilt inbound with Claude Managed Agents</a></li>
+</ul>
+</main>
+</body>
+</html>

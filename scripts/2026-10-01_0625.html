@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DevDay, p-type BCN, and SB 690 signed · The Ten-Day Diff</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#f5f6f3;--fg:#1d2320;--muted:#5d6862;--line:#dde2dd;--accent:#1f6f5c;
+--display:"Fraunces",Georgia,serif;--body:"IBM Plex Sans",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace}
+@media (prefers-color-scheme:dark){:root{--bg:#121614;--fg:#e4e9e5;--muted:#9aa6a0;--line:#2b3430;--accent:#5cc2a4;color-scheme:dark}}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 var(--body);padding:32px 16px 64px}
+main{max-width:660px;margin:0 auto}
+.label{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font:600 clamp(26px,6vw,36px)/1.15 var(--display);margin:8px 0 6px;text-wrap:balance}
+.meta{font:400 13px/1.4 var(--mono);color:var(--muted);margin:0 0 28px}
+h2{font:600 21px/1.3 var(--display);margin:36px 0 8px;padding-top:20px;border-top:1px solid var(--line)}
+p{margin:0 0 16px}
+ul{padding-left:20px} li{margin:4px 0;font-size:15px}
+a{color:var(--accent);text-underline-offset:3px}
+.back{font:500 13px var(--body);text-decoration:none}
+</style>
+</head>
+<body>
+<main>
+<a class="back" href="../">← All episodes</a>
+<p class="label" style="margin-top:24px">The Ten-Day Diff · script</p>
+<h1>DevDay, p-type BCN, and SB 690 signed</h1>
+<p class="meta">Oct 1, 2026 · covers Sep 21 to Sep 30</p>
+<p>Good morning, John. This is The Ten-Day Diff for Thursday, October 1st, covering September 21st through September 30th.</p>
+<p>The last two episodes already took most of that window, so today is shorter and leans on what landed in the last few days.</p>
+<p>Five areas, 11 items.</p>
+<h2>Technical - AI/software</h2>
+<p>First, AI and software.</p>
+<p>OpenAI held DevDay 2026 on September 29th.</p>
+<p>The headline model is GPT-6.1 Sol, pitched as close to their top Astra model on agentic coding at about a fifth of the token cost.</p>
+<p>There&#x27;s also an Ultrafast tier, up to 300 tokens a second in Codex, and up to 6 times faster in the API.</p>
+<p>The parts you&#x27;ll care about are further down the list.</p>
+<p>The Agents API now does computer use.</p>
+<p>A new Decisions API answers questions with a fixed set of allowed answers, which is basically structured classification as a product.</p>
+<p>And plugins can now subscribe to MCP events, so an outside system can kick off an automation.</p>
+<p>That last one is the same idea as event-driven triggers in your own pipeline, and it&#x27;s worth watching whether Anthropic answers it.</p>
+<p>Also, on September 30th, the White House announced what it called &quot;morally binding&quot; safety commitments with Anthropic, Google, Meta, NVIDIA, OpenAI and xAI.</p>
+<p>The four-point plan covers internal controls on model capabilities and alignment, plus third-party audits reviewed by a board-level committee.</p>
+<p>There&#x27;s no enforcement mechanism.</p>
+<p>For you, it mostly matters as context.</p>
+<p>Any vendor questionnaire asking about AI governance will start citing it.</p>
+<h2>Technical - Materials science</h2>
+<p>Materials science.</p>
+<p>A Nature paper published September 30th reports wafer-scale epitaxial growth of p-type boron carbon nitride, from groups at the University of Tokyo, National Taiwan University, and National Yang Ming Chiao Tung University.</p>
+<p>The trick is a dual precursor: monomethyl ammonia borane plus ammonia borane, which fixes the timing mismatch in how boron, carbon and nitrogen arrive at the surface.</p>
+<p>Transistors hit a hole mobility of 100 square centimeters per volt-second and an on/off ratio of 10 to the eighth.</p>
+<p>Two-dimensional CMOS has always had a decent n-type story and a weak p-type one.</p>
+<p>This is a credible p-type candidate that grows at wafer scale.</p>
+<p>And from September 23rd, Nature covered a new boron allotrope called Imma-B60, reported in Nature Chemistry by a team at Yanshan University.</p>
+<p>They pressed boron with sodium at high pressure, then baked out the sodium at 900 degrees Celsius under vacuum. What&#x27;s left conducts more than a million times better than ordinary boron and stretches 23% before breaking.</p>
+<p>The ductility comes from the voids the sodium left behind, which let dislocations slip.</p>
+<p>It&#x27;s the first new boron phase since 2009.</p>
+<h2>DIY electronics</h2>
+<p>DIY electronics.</p>
+<p>On September 30th, CNX covered the Waveshare ESP32-C5-Touch-LCD-3.5.</p>
+<p>It&#x27;s a 480 by 320 IPS touchscreen board on the ESP32-C5, so dual-band Wi-Fi 6 plus Zigbee and Thread. It has 8 MB of PSRAM, 32 of flash, a mic and an ES8311 codec, a temperature and humidity sensor, a 6-axis IMU, and options for a small camera and a battery.</p>
+<p>About $32 to $36 direct.</p>
+<p>That&#x27;s a cheap, self-contained, Matter-capable panel.</p>
+<p>Same day, OpenArm 2.0 from Enactic in Tokyo. It&#x27;s an open-source 7-axis arm with quasi-direct-drive joints, a 606 mm reach, about 4 kilos of nominal payload, 1 kHz CAN FD control and an in-hand camera. Hardware is CERN Open Hardware licensed. Software is Apache 2.0 with ROS 2, MuJoCo and Isaac Lab support.</p>
+<p>Not cheap at $6,500, but it&#x27;s a real teleoperation and imitation learning platform you can fully inspect.</p>
+<p>And on September 28th, Up2Stream spun off from Arylic as its own DIY audio brand.</p>
+<p>Streamer boards with AirPlay and Spotify Connect, an ESS Sabre DAC board, amplifier boards, and HTTP, UART and TCP control APIs.</p>
+<p>Handy if you ever want to wire speakers into home automation.</p>
+<h2>Data regulation</h2>
+<p>Data regulation.</p>
+<p>One item.</p>
+<p>On September 30th, Governor Newsom signed SB 690.</p>
+<p>This follows SB 690, presented September 28th, when it had passed the legislature.</p>
+<p>It ends private lawsuits under the California Invasion of Privacy Act&#x27;s pen register provision for website and app tracking. Only the Attorney General can bring those now.</p>
+<p>It applies to pending claims filed within two years of the January 1, 2027 operative date.</p>
+<p>It does not touch wiretap claims under Section 631, and the broad commercial purpose exemption was dropped.</p>
+<p>For your GTM stack, pixel and tracker exposure under the pen register theory mostly goes away, but session replay and chat widget wiretap suits are still live.</p>
+<p>Nothing else new in this area that the last two episodes didn&#x27;t already cover.</p>
+<h2>Claude for GTM engineering</h2>
+<p>Claude for GTM engineering.</p>
+<p>On September 30th, Anthropic made Claude for Government generally available in a FedRAMP High environment.</p>
+<p>It includes the desktop app, Claude Code, Skills, Plugins and Projects, with early access to the Claude Code CLI and Claude for Microsoft 365.</p>
+<p>The pricing model is interesting. No seat fees, usage-based billing with hard spending caps per tier.</p>
+<p>If you sell into the public sector, this is the procurement-ready path.</p>
+<p>Next, with Sonnet 5.5 out, Anthropic deprecated Claude Sonnet 4.5 on September 28th, with retirement on November 30th.</p>
+<p>If any of your HubSpot or Gong enrichment jobs still pin a Sonnet 4.5 model ID, that&#x27;s a two-month clock.</p>
+<p>Swap it and rerun your evals now.</p>
+<p>Last, Claude Code 2.1.286, released September 30th.</p>
+<p>New pieces beyond what we covered last time.</p>
+<p>claude --desktop opens the desktop app on the current directory or resumes a session there.</p>
+<p>A DISABLE_WEB_FETCH environment variable turns off the WebFetch tool, which is useful for locked-down headless runs.</p>
+<p>And another variable caps retries on non-streaming fallback requests that time out.</p>
+<p>That&#x27;s the diff. Talk soon.</p>
+<h2>Sources</h2>
+<ul>
+<li><a href="https://openai.com/index/devday-2026-recap/">OpenAI DevDay 2026: GPT-6.1 Sol, Agents API computer use, Decisions API, MCP events</a></li>
+<li><a href="https://iapp.org/news/a/white-house-major-ai-developers-reach-morally-binding-safety-commitments">White House &#x27;morally binding&#x27; AI safety commitments with six labs</a></li>
+<li><a href="https://www.nature.com/articles/s41586-026-11047-9">Wafer-scale epitaxy of high-mobility p-type boron carbon nitride</a></li>
+<li><a href="https://www.nature.com/articles/d41586-026-03001-6">New conductive, ductile boron allotrope Imma-B60</a></li>
+<li><a href="https://www.cnx-software.com/2026/09/30/esp32-c5-devkit-features-3-5-inch-touch-lcd-optional-camera-and-battery/">Waveshare ESP32-C5-Touch-LCD-3.5</a></li>
+<li><a href="https://www.cnx-software.com/2026/09/30/openarm-2-0-an-open-source-7-dof-robot-arm-with-qdd-joints-bilateral-force-feedback-in-hand-camera/">OpenArm 2.0 open-source 7-DOF arm (Enactic)</a></li>
+<li><a href="https://www.cnx-software.com/2026/09/28/up2stream-spins-off-from-arylic-as-a-dedicated-diy-audio-brand/">Up2Stream spins off from Arylic as DIY audio brand</a></li>
+<li><a href="https://www.newsmediaalliance.org/newsom-signs-sb-690-into-law/">California SB 690 signed (follows SB 690, presented Sept 28)</a></li>
+<li><a href="https://claude.com/blog/claude-for-government-is-now-generally-available">Claude for Government GA (FedRAMP High, no seat fees)</a></li>
+<li><a href="https://releasebot.io/updates/anthropic/claude-developer-platform">Claude Sonnet 4.5 deprecated, retires Nov 30</a></li>
+<li><a href="https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md">Claude Code 2.1.286: --desktop, DISABLE_WEB_FETCH, non-streaming retry cap</a></li>
+</ul>
+</main>
+</body>
+</html>

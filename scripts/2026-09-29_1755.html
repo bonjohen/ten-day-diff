@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sonnet 5.5, default-deny agents, and a direct-gap MoS2 bilayer · The Ten-Day Diff</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#f5f6f3;--fg:#1d2320;--muted:#5d6862;--line:#dde2dd;--accent:#1f6f5c;
+--display:"Fraunces",Georgia,serif;--body:"IBM Plex Sans",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace}
+@media (prefers-color-scheme:dark){:root{--bg:#121614;--fg:#e4e9e5;--muted:#9aa6a0;--line:#2b3430;--accent:#5cc2a4;color-scheme:dark}}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 var(--body);padding:32px 16px 64px}
+main{max-width:660px;margin:0 auto}
+.label{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font:600 clamp(26px,6vw,36px)/1.15 var(--display);margin:8px 0 6px;text-wrap:balance}
+.meta{font:400 13px/1.4 var(--mono);color:var(--muted);margin:0 0 28px}
+h2{font:600 21px/1.3 var(--display);margin:36px 0 8px;padding-top:20px;border-top:1px solid var(--line)}
+p{margin:0 0 16px}
+ul{padding-left:20px} li{margin:4px 0;font-size:15px}
+a{color:var(--accent);text-underline-offset:3px}
+.back{font:500 13px var(--body);text-decoration:none}
+</style>
+</head>
+<body>
+<main>
+<a class="back" href="../">← All episodes</a>
+<p class="label" style="margin-top:24px">The Ten-Day Diff · script</p>
+<h1>Sonnet 5.5, default-deny agents, and a direct-gap MoS2 bilayer</h1>
+<p class="meta">Sep 29, 2026</p>
+<p>This is The Ten-Day Diff for Wednesday, September 30th.</p>
+<p>I&#x27;m covering what changed since Monday&#x27;s episode, and there&#x27;s a fair amount, especially on the Claude side.</p>
+<p>Let&#x27;s start with AI and software.</p>
+<h2>Technical - AI/software</h2>
+<p>xAI shipped Grok 4.7 on September 21.</p>
+<p>It&#x27;s a bigger model, about 2.1 trillion parameters, up from 1.5 trillion in Grok 4.6.</p>
+<p>Pricing is $2 per million input tokens and $6 per million output. xAI says it spends longer on hard problems and checks its own answers more often.</p>
+<p>On the published leaderboards it lands second, behind the current frontier leader.</p>
+<p>It&#x27;s already in the xAI API, Cursor and GitHub Copilot.</p>
+<p>Why it matters to you.</p>
+<p>At $6 output, it&#x27;s a cheap second opinion for long reasoning jobs. If your pipeline has a model routing layer, it&#x27;s worth a bake-off on a few of your own tasks before you believe any leaderboard.</p>
+<p>The second item came out of a Claude blog post on September 28.</p>
+<p>NVIDIA released OpenShell, an open-source runtime that sits under an agent and enforces policy on every action it takes. File access, network calls, and data movement are all denied by default unless a rule allows them.</p>
+<p>It&#x27;s Apache 2.0 licensed and on GitHub.</p>
+<p>Anthropic paired it with Claude Managed Agents, which keep credentials in a vault the agent never sees and write an audit trail of what the agent did.</p>
+<p>For you, this is the missing piece if you want agents touching HubSpot or Snowflake without handing them raw keys.</p>
+<p>Default deny, plus a log you can show a security reviewer, is a much easier conversation.</p>
+<h2>Technical - Materials science</h2>
+<p>Materials science.</p>
+<p>In Nature on September 23rd, a team from National Taiwan Normal University, MIT, and National Taiwan University grew bilayer molybdenum disulfide by chemical vapor deposition with a specific 1H stacking. Normally, stacking a second layer turns molybdenum disulfide&#x27;s gap from direct to indirect, and the light emission drops off.</p>
+<p>With this stacking, the bilayer keeps a direct band gap.</p>
+<p>Emission gets stronger, and valley polarization is actually better than in a single layer.</p>
+<p>That&#x27;s a clean example of stacking order as a design knob, not just layer count.</p>
+<p>If you&#x27;ve ever modeled 2D materials, this is a structure-property result you can reproduce in DFT.</p>
+<p>Same issue of Nature, same day. A group at the Max Planck Institute for Polymer Research designed nine-residue peptides that assemble into hexagonal, honeycomb-like fibrils.</p>
+<p>The sequence sets the lattice, and each fibril carries continuous channels about 5 nanometers wide.</p>
+<p>They can build single-channel or multi-channel versions.</p>
+<p>It&#x27;s sequence-programmed porosity, which is a nice bridge between self-assembly and the kind of design-space search you&#x27;d normally do with code.</p>
+<p>And on September 24th, TU Dortmund reported in Nature Communications that separate time crystals in the same gallium arsenide chip, doped with indium and silicon, and cooled to about -270 degrees Celsius, locked to a common frequency.</p>
+<p>They sync across as much as 40 micrometers, coupled through spin-polarized electrons.</p>
+<p>That&#x27;s over a thousand times the size of one oscillator.</p>
+<p>It&#x27;s early physics, but long-range coupling between oscillators in a solid is the sort of thing that later shows up in sensing and timing hardware.</p>
+<h2>DIY electronics</h2>
+<p>DIY electronics.</p>
+<p>On September 29, CNX Software covered the Walnut Pi CM2, a compute module built on the Allwinner T527.</p>
+<p>It has 8 Cortex-A55 cores, up to 4 GB of RAM, a 2 TOPS NPU, Wi-Fi 6, and PCI Express. Pricing runs from about $28 to $49 on AliExpress.</p>
+<p>The comparable Raspberry Pi CM5 is closer to $98. It isn&#x27;t pin-compatible with the CM5, so plan on its own carrier board.</p>
+<p>Same day, NXP&#x27;s FRDM-IMXRT1186 board.</p>
+<p>It&#x27;s a crossover MCU with a Cortex-M7 at 800 MHz and a Cortex-M33 at 300 MHz. What stands out is four Ethernet ports: 2 gigabit for time-sensitive networking and 2 Fast Ethernet that can run EtherCAT.</p>
+<p>It&#x27;s $85 and supports Zephyr and FreeRTOS.</p>
+<p>That&#x27;s an unusually cheap way to learn industrial Ethernet.</p>
+<p>And on September 28th, Critical Link announced the MitySOM-AM62 family: three pin-compatible SO-DIMM modules on TI Sitara AM62 chips. One is general purpose, one adds a 2 TOPS DSP for vision, and one has a stronger GPU for displays.</p>
+<p>Dev kits run about $500 to $670.</p>
+<p>It&#x27;s more industrial than hobby, but it lets you prototype on one carrier and swap the compute later.</p>
+<h2>Data regulation</h2>
+<p>Data regulation.</p>
+<p>On September 25th, the Senate Judiciary Subcommittee on Crime held a hearing on Flock Safety&#x27;s camera network, chaired by Senator Josh Hawley, with Senators Durbin and Padilla taking part.</p>
+<p>The numbers came up again and again: about 120,000 cameras in 49 states and roughly 20 billion vehicle images a month.</p>
+<p>Flock&#x27;s CEO declined to testify.</p>
+<p>Warrant requirements for access to that data were the main reform on the table.</p>
+<p>This matters because it&#x27;s bipartisan.</p>
+<p>When license plate data gets federal attention, the rules for any data broker feeding location or vehicle signals into a sales or enrichment pipeline tend to follow.</p>
+<p>Second, the Australian government opened an investigation on September 24th after OpenAI models accessed government websites during internal training and evaluation back in June.</p>
+<p>The sites included Services Australia&#x27;s Medicare statistics portal. OpenAI apologized publicly on September 29.</p>
+<p>It says it found no access to individual medical or criminal records, and it&#x27;s setting up an independent task force with Australian experts.</p>
+<p>The takeaway for you is simple. An agent that browses on your behalf can create legal exposure for you even when nobody meant it to.</p>
+<p>Scoping which domains an agent may touch isn&#x27;t optional anymore.</p>
+<p>One quick note.</p>
+<p>SB 690, the California pen register reform we covered Monday, is still on the governor&#x27;s desk.</p>
+<p>Today is his deadline and I haven&#x27;t seen a signature reported yet.</p>
+<h2>Claude for GTM engineering</h2>
+<p>Last, Claude for GTM engineering.</p>
+<p>The big one is Claude Sonnet 5.5, released September 28.</p>
+<p>It costs $2 per million input tokens and $10 per million output.</p>
+<p>Anthropic says it&#x27;s more than 30% faster than Sonnet 5 and scores within a point or two of Opus 5.5 on several agent benchmarks. The model ID is claude-sonnet-5-5.</p>
+<p>Watch for breaking changes if you&#x27;re migrating from Sonnet 5.</p>
+<p>Forced tool use with tool_choice set to any or tool now returns a 400 error, and the disabled thinking setting is replaced.</p>
+<p>For your pipeline, this is probably the new default for high-volume jobs like call summarization from Gong and enrichment writes into HubSpot.</p>
+<p>Check your tool_choice settings before you flip the model name.</p>
+<p>On September 24, two platform changes. Anthropic resumed billing for some refusals that happen before any output in three narrow categories.</p>
+<p>Separately, the Compliance API activity feed stopped returning file names and titles, including on past records.</p>
+<p>If you have any audit or reporting job reading that feed, the title fields are now empty.</p>
+<p>Don&#x27;t let a dashboard quietly go blank.</p>
+<p>And Claude Code shipped two releases worth knowing.</p>
+<p>Version 2.1.283 on September 25th added a /doctor prompt-audit command that reviews your CLAUDE.md files, and it now sends MCP tool outputs to OpenTelemetry.</p>
+<p>Version 2.1.284 on September 28th added a /mcp reconnect all command and fixed tool calls failing in resumed sessions.</p>
+<p>The OpenTelemetry change is the useful one for you.</p>
+<p>You can finally see what your Snowflake or HubSpot MCP tools actually returned when a run goes sideways.</p>
+<p>That&#x27;s the diff for today. Sources are in the email and on the episode page. Talk soon.</p>
+<h2>Sources</h2>
+<ul>
+<li><a href="https://tech.yahoo.com/ai/gemini/articles/xai-launches-grok-4-7-171603280.html">xAI Grok 4.7</a></li>
+<li><a href="https://claude.com/blog/giving-companies-more-control-over-their-ai-agents-with-nvidia">NVIDIA OpenShell open-source agent runtime + Claude Managed Agents</a></li>
+<li><a href="https://www.nature.com/articles/s41586-026-11069-3">Direct band gap in 1H-stacked CVD MoS2 bilayers (Nature)</a></li>
+<li><a href="https://www.nature.com/articles/s41586-026-11016-2">Sequence-encoded hexagonal peptide nanofibrils with ~5 nm channels (Nature)</a></li>
+<li><a href="https://www.sciencedaily.com/releases/2026/09/260923035934.htm">Distant time crystals synchronize in GaAs (TU Dortmund)</a></li>
+<li><a href="https://www.cnx-software.com/2026/09/29/walnut-pi-cm2-a-cheaper-raspberry-pi-cm5-alternative-based-on-allwinner-t527-octa-core-soc/">Walnut Pi CM2 (Allwinner T527 compute module)</a></li>
+<li><a href="https://www.cnx-software.com/2026/09/29/nxp-frdm-imxrt1186-development-board-features-i-mx-rt1186-crossover-mcu-four-ethernet-ports/">NXP FRDM-IMXRT1186 dev board</a></li>
+<li><a href="https://www.cnx-software.com/2026/09/28/critical-link-mitysom-am62x-a-p-ti-sitara-am62-so-dimm-soms-for-edge-ai-and-industrial-automation/">Critical Link MitySOM-AM62x/A/P SoMs</a></li>
+<li><a href="https://iapp.org/news/a/us-senators-flag-unease-over-commercial-surveillance-cameras">Senate Judiciary subcommittee hearing on Flock camera network</a></li>
+<li><a href="https://techcrunch.com/2026/09/29/openai-apologizes-to-australia-after-its-ai-agents-breached-government-sites/">OpenAI agents accessed Australian government sites; investigation and apology</a></li>
+<li><a href="https://venturebeat.com/technology/anthropic-launches-claude-sonnet-5-5-with-30-cost-reduction-per-task-due-to-faster-speeds-and-fewer-tool-calls">Claude Sonnet 5.5</a></li>
+<li><a href="https://releasebot.io/updates/anthropic/claude-developer-platform">Pre-output refusal billing resumed; Compliance API feed drops titles</a></li>
+<li><a href="https://releasebot.io/updates/anthropic/claude-code">Claude Code 2.1.283/2.1.284: /doctor prompt-audit, MCP OTel outputs, /mcp reconnect all</a></li>
+</ul>
+</main>
+</body>
+</html>
