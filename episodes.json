@@ -1,11 +1,129 @@
 [
  {
   "audio_url": "episodes/2026-09-29-act-on-it.mp3",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "duration": "8:12",
-  "sections": [],
-  "title": "Act On It (Sept 28 items, sorted by deadline)",
-  "published_at": "2026-09-28"
+  "sections": [
+   {
+    "area": "Technical - AI/software",
+    "items": [
+     {
+      "date": "2026-09-22",
+      "name": "Claude Opus 5.5 launch and pricing",
+      "url": "https://releasebot.io/updates/anthropic/claude-developer-platform"
+     },
+     {
+      "date": "2026-09-22",
+      "name": "OpenAI GPT-6 Luna and Sol",
+      "url": "https://llmgateway.io/timeline"
+     },
+     {
+      "date": "2026-09-21",
+      "name": "Xiaomi MiMo V2.6 Pro and Flash",
+      "url": "https://en.wikipedia.org/wiki/Xiaomi_MiMo"
+     }
+    ]
+   },
+   {
+    "area": "Technical - Materials science",
+    "items": [
+     {
+      "date": "2026-09-21",
+      "name": "ORNL polyethylene to gasoline/diesel",
+      "url": "https://www.sciencedaily.com/news/matter_energy/materials_science/"
+     },
+     {
+      "date": "2026-09-22",
+      "name": "Stanford real-time phonon quantum jumps",
+      "url": "https://www.sciencedaily.com/news/matter_energy/materials_science/"
+     },
+     {
+      "date": "2026-09",
+      "name": "Perovskite modules with lead carboxylate passivators",
+      "url": "https://www.nature.com/subjects/materials-science"
+     },
+     {
+      "date": "2026-09-14",
+      "name": "CrSBr microwave-to-optical conversion",
+      "url": "https://www.nature.com/subjects/materials-science/nmat"
+     }
+    ]
+   },
+   {
+    "area": "DIY electronics",
+    "items": [
+     {
+      "date": "2026-09-27",
+      "name": "LILYGO T-Dongle-C5",
+      "url": "https://www.cnx-software.com/2026/09/27/lilygo-t-dongle-c5-an-esp32-c5-usb-dongle-with-microsd-card-slot-optional-0-96-inch-oled/"
+     },
+     {
+      "date": "2026-09-25",
+      "name": "8Sight T100 LWIR camera",
+      "url": "https://www.cnx-software.com/2026/09/25/compact-long-wave-infrared-camera-pairs-stm32n6-mcu-with-lynred-ati320-thermal-sensor/"
+     },
+     {
+      "date": "2026-09-25",
+      "name": "MemBrowse",
+      "url": "https://www.cnx-software.com/2026/09/25/membrowse-continuously-tracks-firmware-memory-footprint-is-free-for-open-source-projects/"
+     },
+     {
+      "date": "2026-09-26",
+      "name": "KryonOS",
+      "url": "https://www.cnx-software.com/2026/09/26/kryonos-turns-esp32-boards-into-javascript-powered-mini-computer/"
+     }
+    ]
+   },
+   {
+    "area": "Data regulation",
+    "items": [
+     {
+      "date": "2026-08-28",
+      "name": "California SB 690 (CIPA)",
+      "url": "https://www.duanemorris.com/alerts/california_legislature_passes_sb690_creating_major_curb_pixel_tracking_lawsuits_under_cipa_0926.html"
+     },
+     {
+      "date": "2026-09",
+      "name": "EU Digital Omnibus leaked Council draft",
+      "url": "https://cdt.org/insights/cdt-europes-ai-bulletin-september-2026/"
+     },
+     {
+      "date": "2026-09",
+      "name": "Colorado Chatbot Safety Act rulemaking",
+      "url": "https://natlawreview.com/article/br-privacy-security-ai-download-september-2026"
+     }
+    ]
+   },
+   {
+    "area": "Claude for GTM engineering",
+    "items": [
+     {
+      "date": "2026-09-15",
+      "name": "Salesforce in Claude (beta)",
+      "url": "https://releasebot.io/updates/anthropic/claude"
+     },
+     {
+      "date": "2026-09-24",
+      "name": "Claude Tag personal connectors",
+      "url": "https://releasebot.io/updates/anthropic/claude"
+     },
+     {
+      "date": "2026-09-25",
+      "name": "Plugin directory portal + MCP 2.0",
+      "url": "https://claude.com/blog/build-plugins-for-claude"
+     },
+     {
+      "date": "2026-09-23",
+      "name": "Claude Marketplace",
+      "url": "https://claude.com/blog/claude-marketplace"
+     }
+    ]
+   }
+  ],
+  "title": "SB 690 deadline, Opus 5.5 pricing, and the plugin portal",
+  "published_at": "2026-09-29_1117",
+  "window": "Sep 18 to Sep 28",
+  "script_url": "scripts/2026-09-29_1117.html"
  },
  {
   "audio_url": "episodes/2026-09-28.mp3",
@@ -128,8 +246,10 @@
     ]
    }
   ],
-  "title": "Week of September 28",
-  "published_at": "2026-09-28"
+  "title": "Opus 5.5, SB 690, and plastic into diesel",
+  "published_at": "2026-09-28_0646",
+  "window": "Sep 18 to Sep 28",
+  "script_url": "scripts/2026-09-28_0646.html"
  },
  {
   "audio_url": "episodes/2026-09-29_1755.mp3",
@@ -228,7 +348,8 @@
     ]
    }
   ],
-  "title": "Sonnet 5.5, default-deny agents, and a direct-gap MoS2 bilayer"
+  "title": "Sonnet 5.5, default-deny agents, and a direct-gap MoS2 bilayer",
+  "script_url": ""
  },
  {
   "audio_url": "episodes/2026-09-30_0646.mp3",
@@ -338,7 +459,8 @@
    }
   ],
   "title": "Voices, printed titanium, and California's deletion rule",
-  "window": "Sep 20 to Sep 29"
+  "window": "Sep 20 to Sep 29",
+  "script_url": ""
  },
  {
   "audio_url": "episodes/2026-10-01_0625.mp3",
@@ -428,7 +550,8 @@
    }
   ],
   "title": "DevDay, p-type BCN, and SB 690 signed",
-  "window": "Sep 21 to Sep 30"
+  "window": "Sep 21 to Sep 30",
+  "script_url": ""
  },
  {
   "audio_url": "episodes/2026-10-02_0559.mp3",
@@ -528,7 +651,8 @@
    }
   ],
   "title": "Mods, Argon, and the robo-boss ban",
-  "window": "Sep 22 to Oct 1"
+  "window": "Sep 22 to Oct 1",
+  "script_url": ""
  },
  {
   "audio_url": "episodes/2026-10-03_0559.mp3",
@@ -632,8 +756,9 @@
     ]
    }
   ],
-  "title": "Agents on the Hook",
-  "window": "Sep 23 to Oct 2"
+  "title": "Agents on the hook",
+  "window": "Sep 23 to Oct 2",
+  "script_url": ""
  },
  {
   "audio_url": "episodes/2026-10-04_0559.mp3",
@@ -742,8 +867,9 @@
     ]
    }
   ],
-  "title": "Decisions, Dark Cavities, and Flock in Court",
-  "window": "Sep 24 to Oct 3"
+  "title": "Decisions, dark cavities, and Flock in court",
+  "window": "Sep 24 to Oct 3",
+  "script_url": ""
  },
  {
   "audio_url": "episodes/2026-10-05_0600.mp3",
@@ -847,14 +973,15 @@
     ]
    }
   ],
-  "title": "Bug Bounties on Pause, Picosecond Supercurrents, and Speed-to-Lead",
-  "window": "Sep 25 to Oct 4"
+  "title": "Bug bounties on pause, picosecond supercurrents, and speed-to-lead",
+  "window": "Sep 25 to Oct 4",
+  "script_url": ""
  },
  {
   "date": "2026-10-05",
   "published_at": "2026-10-05_1242",
   "window": "Sep 25 to Oct 4",
-  "title": "Local 125B models, session replay ruling, Models API line field",
+  "title": "Local 125B models, a session replay ruling, and the Models API line field",
   "duration": "9:10",
   "audio_url": "episodes/2026-10-05_1242.mp3",
   "sections": [
@@ -958,6 +1085,7 @@
      }
     ]
    }
-  ]
+  ],
+  "script_url": ""
  }
 ]

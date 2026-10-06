@@ -53,12 +53,15 @@ h3.log{font:600 16px var(--display);margin:8px 0 0}
 
 <script>
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const itemDate=d=>{const m=/^(\d{4})-(\d{2})(?:-(\d{2}))?$/.exec(d||"");if(!m)return d||"";return m[3]?MON[m[2]-1]+" "+(+m[3]):MON[m[2]-1]+" "+m[1]};
 const fmtDate=d=>{try{return new Date(d+"T12:00:00").toLocaleDateString(undefined,{weekday:"short",month:"short",day:"numeric",year:"numeric"})}catch{return d}};
 function epHTML(e,open){
   const src=e.audio_url||(e.audio_asset_id?"/_blob/"+e.audio_asset_id:"");
-  const areas=(e.sections||[]).map(s=>`<div class="area"><span class="label">${esc(s.area)}</span><ul>${(s.items||[]).map(i=>`<li>${i.url?`<a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.name)}</a>`:esc(i.name)} <span class="d">${esc(i.date||"")}</span></li>`).join("")}</ul></div>`).join("");
+  const areas=(e.sections||[]).map(s=>`<div class="area"><span class="label">${esc(s.area)}</span><ul>${(s.items||[]).map(i=>`<li>${i.url?`<a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.name)}</a>`:esc(i.name)} <span class="d">${esc(itemDate(i.date))}</span></li>`).join("")}</ul></div>`).join("");
   const head=`<div class="ep-head"><h2>${esc(e.title||"Episode")}</h2><span class="meta">${esc(fmtDate(e.date))}${e.window?" · covers "+esc(e.window):""}${e.duration?" · "+esc(e.duration):""}</span></div>`;
-  const body=`${src?`<audio controls preload="none" src="${esc(src)}"></audio><div class="actions"><a class="btn" href="${esc(src)}" target="_blank" rel="noopener">Open MP3</a></div>`:""}${areas}`;
+  const links=(e.script_url?`<a class="btn" href="${esc(e.script_url)}">Read in browser</a>`:"")+(src?`<a class="btn" href="${esc(src)}" target="_blank" rel="noopener">Open MP3</a>`:"");
+  const body=`${src?`<audio controls preload="none" src="${esc(src)}"></audio>`:""}${links?`<div class="actions">${links}</div>`:""}${areas}`;
   return open?`<article class="ep">${head}${body}</article>`:`<details class="ep"><summary>${head}</summary>${body}</details>`;
 }
 // Single active player: "play" doesn't bubble, so listen in the capture phase.

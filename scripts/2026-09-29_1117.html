@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SB 690 deadline, Opus 5.5 pricing, and the plugin portal · The Ten-Day Diff</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#f5f6f3;--fg:#1d2320;--muted:#5d6862;--line:#dde2dd;--accent:#1f6f5c;
+--display:"Fraunces",Georgia,serif;--body:"IBM Plex Sans",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace}
+@media (prefers-color-scheme:dark){:root{--bg:#121614;--fg:#e4e9e5;--muted:#9aa6a0;--line:#2b3430;--accent:#5cc2a4;color-scheme:dark}}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 var(--body);padding:32px 16px 64px}
+main{max-width:660px;margin:0 auto}
+.label{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font:600 clamp(26px,6vw,36px)/1.15 var(--display);margin:8px 0 6px;text-wrap:balance}
+.meta{font:400 13px/1.4 var(--mono);color:var(--muted);margin:0 0 28px}
+h2{font:600 21px/1.3 var(--display);margin:36px 0 8px;padding-top:20px;border-top:1px solid var(--line)}
+p{margin:0 0 16px}
+ul{padding-left:20px} li{margin:4px 0;font-size:15px}
+a{color:var(--accent);text-underline-offset:3px}
+.back{font:500 13px var(--body);text-decoration:none}
+</style>
+</head>
+<body>
+<main>
+<a class="back" href="../">← All episodes</a>
+<p class="label" style="margin-top:24px">The Ten-Day Diff · script</p>
+<h1>SB 690 deadline, Opus 5.5 pricing, and the plugin portal</h1>
+<p class="meta">Sep 29, 2026 · covers Sep 18 to Sep 28</p>
+<p>Most weekly roundups go topic by topic. This one runs on a clock. We start with what expires first and end with what you can put off until the weekend. The gap between two things got smaller these ten days: what powerful tools cost, and who&#x27;s allowed to sue you over the ones on your website.</p>
+<h2>THE DEADLINE: Wednesday</h2>
+<p>California SB 690 needs a decision from Governor Newsom by September 30.</p>
+<p>If he signs it, private plaintiffs can no longer bring pen-register claims over website or app tracking. Only the Attorney General can. It also applies retroactively to suits filed on or after January 1, 2025. Pen-register filings went from roughly six hundred to nearly four thousand while this bill was pending, so that&#x27;s a lot of cases likely to get dismissed.</p>
+<p>The fine print matters. The wiretap section, 631, and the recording section, 632, are untouched. Plaintiffs&#x27; firms have already been adding those counts to their complaints, along with federal wiretap claims, to get around the bill. So if you run chat widgets, session replay, or search bars that send data to a vendor, your exposure moves to those claims. It doesn&#x27;t go away.</p>
+<p>What to do: check the signing status Thursday morning, then send your counsel the list of pending demand letters.</p>
+<h2>THE PRICE CUT: effective now</h2>
+<p>Claude Opus 5.5 landed September 22. Anthropic&#x27;s pitch is Fable 5.1-level performance on most work at 40% less than Opus 5. Input is four dollars per million tokens, output is twenty, and cache reads are twenty cents.</p>
+<p>Look at that cache-read price. If your pipeline sends the same big context over and over, like a research agent re-reading an account dossier or a coding agent re-reading a repo map, most of your bill is cache reads, and that line dropped by 60%. The context window is a million tokens, output tops out at 128k, and adaptive thinking can&#x27;t be turned off. There&#x27;s also a new beta for adding tools mid-conversation through system messages. That lets you hand an agent new tools once it&#x27;s figured out what kind of problem it has.</p>
+<p>OpenAI answered the same day with GPT-6 Luna and GPT-6 Sol. Xiaomi shipped MiMo V2.6 the day before. The frontier didn&#x27;t pause.</p>
+<p>What to do: re-price one production workload on Opus 5.5 before your next budget conversation. Cache diagnostics came out of beta, so you can check your cache hit rates directly.</p>
+<h2>THE DISTRIBUTION SHIFT: this month</h2>
+<p>The Claude plugin directory portal opened September 25. You can submit a single remote MCP server, or a GitHub repo that bundles servers and skills. It gets validated and safety-scanned automatically, and you decide when it publishes. Once it&#x27;s live, you see installs by surface and version, plus which searches led people to your listing.</p>
+<p>It supports MCP 2.0&#x27;s stateless core, and two extensions matter here. MCP Apps put interactive UI inside the chat. Enterprise Managed Auth handles OAuth for enterprise users with no setup on their side. For anything that touches a CRM, that second one removes the step where prospects usually drop off.</p>
+<p>Two days earlier the Claude Marketplace opened, where enterprise customers can spend part of their committed Anthropic budget on Claude-powered products. For a buyer, that&#x27;s money already approved.</p>
+<p>On the sales side, Salesforce in Claude is in beta with 37 prebuilt sales skills. Claude Tag in Slack now works with personal connectors, so a rep can ask about their own pipeline in a shared channel and it runs on their own permissions. It&#x27;s on Team plans first.</p>
+<p>What to do: if you&#x27;ve built a GTM plugin, package it for the portal this month. Early listings get the search traffic.</p>
+<h2>THE LONGER FUSE: next quarter</h2>
+<p>A few regulatory items can wait until Q4 planning, but put them on the list.</p>
+<p>Colorado&#x27;s Chatbot Safety Act takes effect January 1. It requires age assurance, persistent AI disclosure, and self-harm response protocols for consumer chatbots. Comments on the proposed rules are open through October 26.</p>
+<p>In Brussels, a leaked Council draft of the Digital Omnibus would let personal data be used to build and run AI under existing legal bases, with light safeguards. Civil society is fighting it, especially the pseudonymisation changes. If that version survives, the rules on EU training data get looser. Don&#x27;t plan around it until the text is final.</p>
+<p>Congress now has 49 separate privacy proposals, per the IAPP. Children&#x27;s privacy makes up about 40% of them. There&#x27;s still no federal omnibus law, and there won&#x27;t be one before January.</p>
+<h2>THE LAB: worth reading</h2>
+<p>For the materials people, four papers from the last ten days.</p>
+<p>Oak Ridge turned polyethylene into gasoline- and diesel-range fuels using an inexpensive aluminum-based catalyst. Plastic-to-fuel always sounds good on paper and usually stalls on catalyst cost. Here the catalyst is cheap, and that&#x27;s the finding.</p>
+<p>A Nature paper on perovskite solar modules used chemically stable lead carboxylate passivators. Those modules beat commercial silicon on yield and held up on reliability. Durability was the objection everyone raised, and this addresses it head on.</p>
+<p>Stanford watched single phonons jump between quantum states in real time, a first for sound. And Nature Materials showed broadband microwave-to-optical conversion in CrSBr through magnon–exciton coupling. That&#x27;s a possible bridge between superconducting qubits and fiber.</p>
+<h2>THE WEEKEND: bench projects</h2>
+<p>Last, something to build with.</p>
+<p>The 8Sight T100 pairs a 320 by 240 thermal sensor at 60 frames a second with an STM32N6. Its neural accelerator is rated at 600 GOPS, so you can run your own detection model on thermal video with no cloud involved. It&#x27;s a good project if you&#x27;ve wanted to put anomaly detection on something that heats up.</p>
+<p>LILYGO&#x27;s T-Dongle-C5 fits dual-band WiFi 6, Thread, and Zigbee in a USB stick with microSD and a Qwiic port. Handy for a network sniffer or a pocket-sized Thread border router.</p>
+<p>On the software side, MemBrowse runs in CI and flags your firmware&#x27;s RAM and flash growth on every pull request. It&#x27;s free for open source. KryonOS turns a touchscreen ESP32 into a small JavaScript computer that installs apps over WiFi.</p>
+<p>That&#x27;s ten days sorted by deadline. The one to watch is Wednesday in Sacramento, and the rest has more time than it seems. Back in ten.</p>
+<h2>Sources</h2>
+<ul>
+<li><a href="https://releasebot.io/updates/anthropic/claude-developer-platform">Claude Opus 5.5 launch and pricing</a></li>
+<li><a href="https://llmgateway.io/timeline">OpenAI GPT-6 Luna and Sol</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Xiaomi_MiMo">Xiaomi MiMo V2.6 Pro and Flash</a></li>
+<li><a href="https://www.sciencedaily.com/news/matter_energy/materials_science/">ORNL polyethylene to gasoline/diesel</a></li>
+<li><a href="https://www.sciencedaily.com/news/matter_energy/materials_science/">Stanford real-time phonon quantum jumps</a></li>
+<li><a href="https://www.nature.com/subjects/materials-science">Perovskite modules with lead carboxylate passivators</a></li>
+<li><a href="https://www.nature.com/subjects/materials-science/nmat">CrSBr microwave-to-optical conversion</a></li>
+<li><a href="https://www.cnx-software.com/2026/09/27/lilygo-t-dongle-c5-an-esp32-c5-usb-dongle-with-microsd-card-slot-optional-0-96-inch-oled/">LILYGO T-Dongle-C5</a></li>
+<li><a href="https://www.cnx-software.com/2026/09/25/compact-long-wave-infrared-camera-pairs-stm32n6-mcu-with-lynred-ati320-thermal-sensor/">8Sight T100 LWIR camera</a></li>
+<li><a href="https://www.cnx-software.com/2026/09/25/membrowse-continuously-tracks-firmware-memory-footprint-is-free-for-open-source-projects/">MemBrowse</a></li>
+<li><a href="https://www.cnx-software.com/2026/09/26/kryonos-turns-esp32-boards-into-javascript-powered-mini-computer/">KryonOS</a></li>
+<li><a href="https://www.duanemorris.com/alerts/california_legislature_passes_sb690_creating_major_curb_pixel_tracking_lawsuits_under_cipa_0926.html">California SB 690 (CIPA)</a></li>
+<li><a href="https://cdt.org/insights/cdt-europes-ai-bulletin-september-2026/">EU Digital Omnibus leaked Council draft</a></li>
+<li><a href="https://natlawreview.com/article/br-privacy-security-ai-download-september-2026">Colorado Chatbot Safety Act rulemaking</a></li>
+<li><a href="https://releasebot.io/updates/anthropic/claude">Salesforce in Claude (beta)</a></li>
+<li><a href="https://releasebot.io/updates/anthropic/claude">Claude Tag personal connectors</a></li>
+<li><a href="https://claude.com/blog/build-plugins-for-claude">Plugin directory portal + MCP 2.0</a></li>
+<li><a href="https://claude.com/blog/claude-marketplace">Claude Marketplace</a></li>
+</ul>
+</main>
+</body>
+</html>
