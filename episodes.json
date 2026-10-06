@@ -1188,5 +1188,106 @@
     ]
    }
   ]
+ },
+ {
+  "date": "2026-10-06",
+  "published_at": "2026-10-06_0600",
+  "window": "Sep 26 to Oct 5",
+  "title": "Reflection Beam, a tunable altermagnet, and IP logs as consent",
+  "duration": "9:11",
+  "audio_url": "episodes/2026-10-06_0600.mp3",
+  "script_url": "scripts/2026-10-06_0600.html",
+  "sections": [
+   {
+    "area": "Technical - AI/software",
+    "items": [
+     {
+      "name": "Reflection AI Beam: 501B-parameter open model (23B active, Apache 2.0)",
+      "date": "2026-10-05",
+      "url": "https://siliconangle.com/2026/10/05/reflection-ai-debuts-open-source-beam-model-with-501b-parameters/"
+     },
+     {
+      "name": "Together Link CLI: open models inside Claude Code, Codex, OpenCode and Pi",
+      "date": "2026-10-05",
+      "url": "https://www.together.ai/blog/together-link-frontier-quality-open-models-in-the-harness-you-already-use"
+     }
+    ]
+   },
+   {
+    "area": "Technical - Materials science",
+    "items": [
+     {
+      "name": "Altermagnetism in Co1/4TaSe2 (UCF, Nature Communications)",
+      "date": "2026-10-05",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261002080015.htm"
+     },
+     {
+      "name": "Lead-free relaxor superlattice capacitors: 12.6 J/cm3 at ~99% efficiency",
+      "date": "2026-10-05",
+      "url": "https://www.nature.com/articles/s41467-026-77971-6"
+     },
+     {
+      "name": "Self-foaming Fe-19W powders for thermochemical hydrogen storage (Northwestern / HKUST Guangzhou)",
+      "date": "2026-10-05",
+      "url": "https://www.nature.com/articles/s41467-026-78337-8"
+     }
+    ]
+   },
+   {
+    "area": "DIY electronics",
+    "items": [
+     {
+      "name": "SecurePair: ESP32 key exchange over a single LED (Luca Soltoggio)",
+      "date": "2026-10-05",
+      "url": "https://hackaday.com/2026/10/05/two-microcontrollers-talking-all-it-needs-is-an-led/"
+     },
+     {
+      "name": "DEBIX M8391-01 industrial SBC (MediaTek Genio 720, 9 TOPS NPU)",
+      "date": "2026-10-05",
+      "url": "https://www.cnx-software.com/2026/10/05/debix-m8391-01-industrial-sbc-features-mediatek-genio-720-soc-with-9-tops-npu-dual-display-support/"
+     },
+     {
+      "name": "Geekworm supercapacitor UPS for Raspberry Pi 5 (5V/5A, $44.90)",
+      "date": "2026-10-05",
+      "url": "https://geekworm.com/products/rpi5-ups-scap-pd5v5a"
+     }
+    ]
+   },
+   {
+    "area": "Data regulation",
+    "items": [
+     {
+      "name": "Düsseldorf Administrative Court: IP records are not proof of consent to marketing email",
+      "date": "2026-10-05",
+      "url": "https://www.mlex.com/mlex/data-privacy-security/articles/2533701/ip-records-are-not-proof-of-consent-to-marketing-emails-german-court-rules"
+     },
+     {
+      "name": "EU Digital Omnibus: October 2 Council draft (follows leaked Council draft presented 2026-09-28)",
+      "date": "2026-10-02",
+      "url": "https://www.mlex.com/mlex/data-privacy-security/articles/2533729/eu-digital-omnibus-draft-adjusts-rules-on-data-protection-cookies-trade-secrets"
+     },
+     {
+      "name": "Denmark investigates mass automated search of CPR personal ID numbers",
+      "date": "2026-10-05",
+      "url": "https://www.mlex.com/mlex/data-privacy-security/articles/2533690/denmark-investigating-report-of-mass-automated-search-of-personal-ids"
+     }
+    ]
+   },
+   {
+    "area": "Claude for GTM engineering",
+    "items": [
+     {
+      "name": "Claude Code 2.1.290: WebFetch offset, refilling WebSearch budget, stricter Bash approvals, managed-agents-onboard",
+      "date": "2026-10-05",
+      "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+     },
+     {
+      "name": "SemiAnalysis: Claude Max $200 yields ~5x the API-equivalent value of ChatGPT Pro",
+      "date": "2026-10-05",
+      "url": "https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x"
+     }
+    ]
+   }
+  ]
  }
 ]

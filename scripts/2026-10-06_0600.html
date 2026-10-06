@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reflection Beam, a tunable altermagnet, and IP logs as consent · The Ten-Day Diff</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#f5f6f3;--fg:#1d2320;--muted:#5d6862;--line:#dde2dd;--accent:#1f6f5c;
+--display:"Fraunces",Georgia,serif;--body:"IBM Plex Sans",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace}
+@media (prefers-color-scheme:dark){:root{--bg:#121614;--fg:#e4e9e5;--muted:#9aa6a0;--line:#2b3430;--accent:#5cc2a4;color-scheme:dark}}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 var(--body);padding:32px 16px 64px}
+main{max-width:660px;margin:0 auto}
+.label{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font:600 clamp(26px,6vw,36px)/1.15 var(--display);margin:8px 0 6px;text-wrap:balance}
+.meta{font:400 13px/1.4 var(--mono);color:var(--muted);margin:0 0 28px}
+h2{font:600 21px/1.3 var(--display);margin:36px 0 8px;padding-top:20px;border-top:1px solid var(--line)}
+p{margin:0 0 16px}
+ul{padding-left:20px} li{margin:4px 0;font-size:15px}
+a{color:var(--accent);text-underline-offset:3px}
+.back{font:500 13px var(--body);text-decoration:none}
+</style>
+</head>
+<body>
+<main>
+<a class="back" href="../">← All episodes</a>
+<p class="label" style="margin-top:24px">The Ten-Day Diff · script</p>
+<h1>Reflection Beam, a tunable altermagnet, and IP logs as consent</h1>
+<p class="meta">Oct 6, 2026 · covers Sep 26 to Oct 5</p>
+<p>This is The Ten-Day Diff for Tuesday, October 6, 2026, recorded at 6:00 in the morning Pacific and covering September 26 through October 5. Nearly everything today landed on Monday, October 5: a large open model, a way to run open models inside Claude Code, three materials papers, and a German ruling about what counts as proof of email consent.</p>
+<h2>Technical - AI/software</h2>
+<p>Reflection AI announced Beam on October 5. It is an open model with 501 billion parameters in total, but it is a sparse mixture of experts, so only about 23 billion are active for any one token. That second number is what sets the cost of running it. Reflection says Beam matches GLM-5.2 on reasoning with three to four times less compute and comes close to Qwen 3.8-Max on coding. Those are the company&#x27;s own benchmarks, and it still trails Claude Fable 5.1. Early access is open now. The weights, a technical report, and fine-tuning tools are due later this month under Apache 2.0. For you, the license is the point: a self-hostable agentic model from a US lab, which makes it a candidate for work where data cannot leave your own infrastructure.</p>
+<p>Also on October 5, Together AI released Together Link. It is a command-line tool, installed with one curl command, that points the coding harness you already use at open models hosted by Together. It supports Claude Code, Claude Desktop, Codex, OpenCode, and Pi. The model list includes GLM 5.3, Kimi K3, and DeepSeek V4.1 Flash, plus about forty others. Together claims a cost cut of more than half, and the tool shows each session&#x27;s cost next to what the same work would have cost on Opus 5.5. That gives you a cheap experiment: run one of your routine pipeline jobs through an open model in the same harness and compare both the output and the bill.</p>
+<h2>Technical - Materials science</h2>
+<p>Three papers, all published October 5 in Nature Communications.</p>
+<p>A group at the University of Central Florida, led by Madhab Neupane, reported altermagnetism in cobalt-intercalated tantalum diselenide, Co1/4TaSe2. An altermagnet has no net magnetization, like an antiferromagnet, yet its electron bands are split by spin, like a ferromagnet. The team saw the band splitting with photoemission, and then confirmed with spin-resolved measurements that the split bands carry opposite spin. What makes this one interesting is the host. It is a layered dichalcogenide, so it can be exfoliated, stacked, and intercalated differently, which gives a tuning handle most altermagnet candidates lack.</p>
+<p>Second, a team from the University of Minho, ICMAB in Barcelona, Cambridge, and Brunel built lead-free capacitor superlattices. They alternate a relaxor ferroelectric, barium zirconate titanate mixed with barium calcium titanate, with thin layers of strontium titanate. The result stores 12.6 joules per cubic centimeter at about 99 percent efficiency, in a field of 920 kilovolts per centimeter. Energy density that high is not new. Getting it with almost no loss, and without lead, is.</p>
+<p>Third, Northwestern and the Hong Kong University of Science and Technology in Guangzhou went after an old problem in iron-based hydrogen storage. Iron powder stores hydrogen by cycling between metal and oxide, but it sinters and loses capacity. Their powder is iron with 19 atomic percent tungsten. During cycling, tungsten moves through the gas phase and opens up pores, so the powder foams itself instead of fusing. A kilogram-scale bed held 43.8 grams of hydrogen and kept about 93 percent of its capacity over 30 cycles, at 650 to 800 degrees Celsius.</p>
+<h2>DIY electronics</h2>
+<p>On October 5, Hackaday covered SecurePair, an Arduino library by Luca Soltoggio. Two ESP32 boards exchange an encryption key through a single LED each. An LED also works as a weak photodiode, so the firmware switches the pin between driving it and reading it. Hold the two boards together to pair them, and then the real traffic moves over ESP-NOW or LoRa. It is a neat answer to the pairing problem on devices that have no screen and no buttons.</p>
+<p>CNX Software covered two boards the same day. The DEBIX M8391-01 is a credit-card-sized industrial computer built on the MediaTek Genio 720, with a 9 TOPS neural processor, up to 16 gigabytes of RAM, Wi-Fi 6, and Ethernet with power over Ethernet. It runs Android, Yocto, or Ubuntu. No price yet.</p>
+<p>And Geekworm has a supercapacitor UPS for the Raspberry Pi 5, at $44.90. It takes 9 to 24 volts in and delivers the full 5 volts at 5 amps the Pi 5 wants, with an INA219 reporting voltage and current over I2C. There is no battery to wear out. It only needs to bridge a brownout or hold long enough for a clean shutdown.</p>
+<h2>Data regulation</h2>
+<p>The one to remember comes from Germany. MLex reported on October 5 that the Düsseldorf Administrative Court upheld a formal warning from the North Rhine-Westphalia data protection commissioner against a travel and online marketing company. The company had sent marketing email and offered logged IP addresses from its double opt-in records as proof of consent. The court said that is not enough, because an IP address identifies a device and not the person using it. If your consent evidence in HubSpot is a timestamp and an IP, that is thin for German recipients. Keep the confirmation email, the click, and the form context together.</p>
+<p>In Brussels, EU governments circulated a new draft of the Digital Omnibus dated October 2. This follows the leaked Council draft presented September 28. The new text says that developing or operating AI does not automatically justify processing personal data. It also adds a review of data protection obligations, shortens the wait before a site may ask again for cookie consent, and strengthens trade secret protection. National ambassadors take it up next.</p>
+<p>And in Denmark, the data protection agency said on October 5 that it is investigating a mass automated search of the civil registration system, apparently an attempt to find valid personal ID numbers. The registry itself reported the incident. Details are still sparse.</p>
+<h2>Claude for GTM engineering</h2>
+<p>Claude Code 2.1.290 shipped October 5, and several changes affect unattended runs. WebFetch used to drop page text past 100,000 characters without saying so. It now reports what it left unread and accepts an offset to continue. WebSearch no longer stops at a hard 200 calls per session. The budget refills at 100 per hour, set by CLAUDE_CODE_WEB_SEARCH_REFILLS_PER_HOUR. Recurring loop tasks now survive compaction. On the stricter side, rg and git grep with shell wildcards, and pyright, now ask for approval, so check the allow rules on any scheduled job. In cloud sessions, gh api rejects hosts other than github.com. There is also a new /claude-api managed-agents-onboard command, and claude attach and claude logs for named sessions.</p>
+<p>Last, a pricing note. On October 5, SemiAnalysis published limit tests across the major AI subscriptions. Their estimate: the $200 Claude Max plan yields about $1,244 a month of API-equivalent Opus 5.5 usage, against about $276 for ChatGPT Pro on GPT-6.1 Sol. The caveat is theirs. The ratio depends entirely on the model and the workload, and they caught OpenAI quietly A/B testing limits. Treat it as a snapshot. It is still useful when you decide which jobs run on a seat and which on an API key.</p>
+<p>That&#x27;s the diff. Back tomorrow.</p>
+<h2>Sources</h2>
+<ul>
+<li><a href="https://siliconangle.com/2026/10/05/reflection-ai-debuts-open-source-beam-model-with-501b-parameters/">Reflection AI Beam: 501B-parameter open model</a></li>
+<li><a href="https://www.together.ai/blog/together-link-frontier-quality-open-models-in-the-harness-you-already-use">Together Link CLI</a></li>
+<li><a href="https://www.sciencedaily.com/releases/2026/10/261002080015.htm">Altermagnetism in Co1/4TaSe2 (UCF)</a></li>
+<li><a href="https://www.nature.com/articles/s41467-026-77971-6">Lead-free relaxor superlattice capacitors</a></li>
+<li><a href="https://www.nature.com/articles/s41467-026-78337-8">Self-foaming iron-tungsten powders for hydrogen storage</a></li>
+<li><a href="https://hackaday.com/2026/10/05/two-microcontrollers-talking-all-it-needs-is-an-led/">SecurePair: ESP32 pairing over a single LED</a></li>
+<li><a href="https://www.cnx-software.com/2026/10/05/debix-m8391-01-industrial-sbc-features-mediatek-genio-720-soc-with-9-tops-npu-dual-display-support/">DEBIX M8391-01 industrial SBC</a></li>
+<li><a href="https://geekworm.com/products/rpi5-ups-scap-pd5v5a">Geekworm supercapacitor UPS for Raspberry Pi 5</a></li>
+<li><a href="https://www.mlex.com/mlex/data-privacy-security/articles/2533701/ip-records-are-not-proof-of-consent-to-marketing-emails-german-court-rules">Düsseldorf court: IP records are not proof of email consent</a></li>
+<li><a href="https://www.mlex.com/mlex/data-privacy-security/articles/2533729/eu-digital-omnibus-draft-adjusts-rules-on-data-protection-cookies-trade-secrets">EU Digital Omnibus: October 2 Council draft</a></li>
+<li><a href="https://www.mlex.com/mlex/data-privacy-security/articles/2533690/denmark-investigating-report-of-mass-automated-search-of-personal-ids">Denmark investigates mass automated search of personal IDs</a></li>
+<li><a href="https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md">Claude Code 2.1.290</a></li>
+<li><a href="https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x">SemiAnalysis: Anthropic subscriptions offer 5x+ more value than OpenAI</a></li>
+</ul>
+</main>
+</body>
+</html>
