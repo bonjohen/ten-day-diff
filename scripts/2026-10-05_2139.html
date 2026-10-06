@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HubSpot&#x27;s Claude connector scopes, p-type WSe2, and a VPPA case at the Supreme Court · The Ten-Day Diff</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#f5f6f3;--fg:#1d2320;--muted:#5d6862;--line:#dde2dd;--accent:#1f6f5c;
+--display:"Fraunces",Georgia,serif;--body:"IBM Plex Sans",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace}
+@media (prefers-color-scheme:dark){:root{--bg:#121614;--fg:#e4e9e5;--muted:#9aa6a0;--line:#2b3430;--accent:#5cc2a4;color-scheme:dark}}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 var(--body);padding:32px 16px 64px}
+main{max-width:660px;margin:0 auto}
+.label{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font:600 clamp(26px,6vw,36px)/1.15 var(--display);margin:8px 0 6px;text-wrap:balance}
+.meta{font:400 13px/1.4 var(--mono);color:var(--muted);margin:0 0 28px}
+h2{font:600 21px/1.3 var(--display);margin:36px 0 8px;padding-top:20px;border-top:1px solid var(--line)}
+p{margin:0 0 16px}
+ul{padding-left:20px} li{margin:4px 0;font-size:15px}
+a{color:var(--accent);text-underline-offset:3px}
+.back{font:500 13px var(--body);text-decoration:none}
+</style>
+</head>
+<body>
+<main>
+<a class="back" href="../">← All episodes</a>
+<p class="label" style="margin-top:24px">The Ten-Day Diff · script</p>
+<h1>HubSpot&#x27;s Claude connector scopes, p-type WSe2, and a VPPA case at the Supreme Court</h1>
+<p class="meta">Oct 5, 2026 · covers Sep 25 to Oct 4</p>
+<p>This is The Ten-Day Diff for Monday, October 5, 2026, recorded at 9:39 in the evening Pacific and covering September 25 through October 4. The big headlines ran in earlier episodes, so this one is the practical layer: library releases, connector scopes, three materials papers, and a few court dockets.</p>
+<h2>Technical - AI/software</h2>
+<p>LangChain shipped its Sonnet 5.5 catch-up. On September 28, langchain 1.4.3 added a chat model for Bedrock Mantle along with fixes to agent tool calls and structured output. A day later, langchain-core 1.6.6 and langchain-anthropic 1.7.5 added Claude Sonnet 5.5 compatibility and fixed tool call replay. If any of your pipeline agents sit on LangChain or LangGraph, pin those versions before you move the model ID. Sonnet 5.5 rejects forced tool choice, and older adapter versions still send it.</p>
+<p>On October 2, GitHub pushed three builds of Copilot CLI 1.0.92. The one worth knowing about adds an environment picker, so a session can switch between running locally and running in the cloud. It also fixes reconnecting to remote servers and messaging with background agents. That is the same local-versus-cloud split Claude Code already has, and it tells you where every coding CLI is heading.</p>
+<p>And on October 3, TechCrunch published a roundup of eighteen AI agents that live in text messages: iMessage, SMS, WhatsApp, RCS. Most are consumer assistants at ten to twenty-five dollars a month. Two are worth a look from a go-to-market seat. Town is an enterprise agent working across email, calendar, Slack and documents, and Wajo handles business calls and bookings with a human handoff. The takeaway is that the chat thread is becoming a front end, and buyers will start expecting vendors to answer there.</p>
+<h2>Technical - Materials science</h2>
+<p>Three Nature Communications papers, all open access.</p>
+<p>First, published September 30, a team at Huazhong University of Science and Technology with the University of Queensland built an alkaline iron-chromium redox flow battery. Iron-chromium has been the cheap flow chemistry that never quite worked, because chromium reacts slowly and hydrogen evolves at the negative side. Their fix is a strong-field ligand that unlocks a chromium three-four couple and suppresses hydrogen. The cell runs at 1.15 volts with 75.8 percent energy efficiency at 100 milliamps per square centimeter, holds for 500 cycles, and they project raw materials at about 17 dollars per kilowatt-hour. For long-duration storage, that cost number is the one to watch.</p>
+<p>Second, published October 1, also led from Huazhong: oxygen-doped monolayer tungsten diselenide as a p-type transistor channel. Oxygen fills selenium vacancies and lets the contacts be heavily doped. Hole mobility went from 55 to 218 square centimeters per volt-second, contact resistance fell from 1,869 to 104 ohm-microns, and a 16-nanometer device delivered 1,635 microamps per micron, 81 percent of the ballistic limit at room temperature. P-type has been the weak half of two-dimensional CMOS. This pairs with the p-type boron carbon nitride result presented October 1, and it attacks the same gap from the contact side.</p>
+<p>Third, published September 30, from Northwestern Polytechnical University in Xi&#x27;an: generative design of alloy microstructures with physics in the loss function. They put interface and crystallographic terms into the surrogate model, then sampled the latent space for candidates that are both diverse and physically realizable. From a small dataset, the model proposed a bimodal grain structure that was not in the training data, and experiments confirmed it gave strength and ductility together. Source data is posted. For anyone doing machine learning on small experimental datasets, it&#x27;s a clean example of buying fidelity with physics rather than with more data.</p>
+<h2>DIY electronics</h2>
+<p>On October 2, Hackaday covered Aaron Christophel&#x27;s teardown of a 15-euro UGreen USB-C cable, the 240-watt kind with a tiny power display in the plug. Inside is an IPS LCD driven by an EN32LF056, a Cortex-M0+ microcontroller with 64 kilobytes of flash and 4 of RAM, and the SWD debug pads are exposed. So that&#x27;s a reflashable inline voltage and current meter for the price of a cable.</p>
+<p>On September 28, Al Williams started a Hackaday series called The FPGA Chronicles with the Tang Nano 20K. That&#x27;s a roughly 50-dollar board around a GOWIN part with about 20,000 lookup tables, 8 megabytes of SDRAM in the package, HDMI and a microSD slot. Part one covers a basic Verilog flow and getting the vendor IDE to behave on Linux. The follow-ups promise the open toolchain: Yosys, Apicula and openFPGALoader. If you&#x27;ve wanted a low-cost way into FPGAs, this is a good one to follow along with.</p>
+<h2>Data regulation</h2>
+<p>On October 1, Bloomberg Law reported that Spokeo, PeopleConnect and about six other people-search companies are suing Connecticut&#x27;s attorney general over the state&#x27;s toughened privacy law. The updated law bans sales of precise geolocation, restricts using shopper data for dynamic pricing, and lets residents demand deletion of personal data even when it came from public records. The brokers say that last piece violates the First Amendment. Enrichment vendors live on public-record data, so this ruling will shape what you can buy.</p>
+<p>On October 2, Judge James Donato in the Northern District of California denied class certification in the tracking-technology suit against Planned Parenthood, calling the plaintiffs&#x27; common evidence &quot;speculation and conjecture.&quot; The claim was that trackers on the site let third parties, Google among them, intercept sensitive visitor data. Add this to the Zillow and Meta dismissals from earlier this week. Pixel cases keep getting filed, and they keep stalling when plaintiffs have to prove what was actually captured, visitor by visitor.</p>
+<p>Also October 2, Privacy Daily previewed Salazar versus Paramount Global, which the Supreme Court hears on October 14. The question is who counts as a &quot;consumer&quot; under the 1988 Video Privacy Protection Act. Salazar signed up for a sports newsletter, and says Paramount&#x27;s site sent his video viewing to Facebook through the pixel. A broad reading would put any site with a newsletter, a video and a pixel in range of statutory damages. That describes most marketing sites.</p>
+<h2>Claude for GTM engineering</h2>
+<p>HubSpot&#x27;s September product update, posted October 1, widens what the HubSpot connector for Claude can do. It can now retrieve intent signals, answer-engine performance and saved reports, manage website pages, and configure pipelines and properties. The MCP server also reaches custom objects, leads, campaigns, marketing email and conversations. You have to reconnect to pick up the new scopes. On the admin side, tool permissions can be set per connector, including a one-click block on write tools. And HubSpot&#x27;s APIs move to date-versioned releases every March and September with 18 months of support, plus new public APIs for sequences and sales templates. This follows the Claude for Small Business growth workflows presented October 5.</p>
+<p>Second, on September 25 HubSpot released a free Sales Plugin for Claude. It bundles eight skills: call prep, daily brief, log call, follow up, pipeline pulse, contact lookup, import contacts, and a general HubSpot skill. It installs as an uploaded plugin and asks for confirmation before it changes anything. Read it as a reference design. Those eight skills are close to what most teams end up building by hand.</p>
+<p>That&#x27;s the diff. Sources are on the episode page.</p>
+<h2>Sources</h2>
+<ul>
+<li><a href="https://releasebot.io/updates/langchain-ai">LangChain 1.4.3 and langchain-anthropic 1.7.5 (Sonnet 5.5 compatibility, Bedrock Mantle)</a></li>
+<li><a href="https://releasebot.io/updates/categories/ai-coding-assistants">GitHub Copilot CLI 1.0.92 environment picker</a></li>
+<li><a href="https://techcrunch.com/2026/10/03/all-the-ai-agents-that-can-live-in-your-text-messages/">TechCrunch roundup: AI agents that live in text messages</a></li>
+<li><a href="https://www.nature.com/articles/s41467-026-77810-8">Alkaline iron-chromium redox flow battery via ligand engineering</a></li>
+<li><a href="https://www.nature.com/articles/s41467-026-78157-w">Oxygen-doped WSe2 ballistic p-type transistors</a></li>
+<li><a href="https://www.nature.com/articles/s41467-026-78118-3">Physics-aware generative design of alloy microstructures</a></li>
+<li><a href="https://hackaday.com/2026/10/02/teardown-of-an-usb-c-cable-with-integrated-lcd/">UGreen USB-C cable with LCD teardown (EN32LF056, exposed SWD)</a></li>
+<li><a href="https://hackaday.com/2026/09/28/the-fpga-chronicles-exploring-the-tang-nano-20k/">The FPGA Chronicles: Tang Nano 20K</a></li>
+<li><a href="https://news.bloomberglaw.com/privacy-and-data-security/data-brokers-challenge-connecticut-laws-toughened-privacy-rules">Data brokers challenge Connecticut privacy law</a></li>
+<li><a href="https://www.law360.com/cybersecurity-privacy/articles/2533245/class-cert-denied-in-planned-parenthood-tracking-tech-suit">Class certification denied in Planned Parenthood tracking suit</a></li>
+<li><a href="https://privacy-daily.com/article/2026/10/02/scotus-ruling-in-salazarparamount-vppa-case-seen-as-impactful-lawyers-say-2610020015">Salazar v. Paramount Global VPPA preview</a></li>
+<li><a href="https://community.hubspot.com/t/september-2026-product-updates/160603">HubSpot September 2026 updates: Claude connector and MCP server scopes</a></li>
+<li><a href="https://community.hubspot.com/t/introducing-the-hubspot-sales-plugin-for-claude/159825">HubSpot Sales Plugin for Claude</a></li>
+</ul>
+</main>
+</body>
+</html>

@@ -1087,5 +1087,106 @@
    }
   ],
   "script_url": ""
+ },
+ {
+  "date": "2026-10-05",
+  "published_at": "2026-10-05_2139",
+  "window": "Sep 25 to Oct 4",
+  "title": "HubSpot's Claude connector scopes, p-type WSe2, and a VPPA case at the Supreme Court",
+  "duration": "9:20",
+  "audio_url": "episodes/2026-10-05_2139.mp3",
+  "script_url": "scripts/2026-10-05_2139.html",
+  "sections": [
+   {
+    "area": "Technical - AI/software",
+    "items": [
+     {
+      "name": "LangChain 1.4.3 and langchain-anthropic 1.7.5 (Sonnet 5.5 compatibility, Bedrock Mantle)",
+      "date": "2026-09-29",
+      "url": "https://releasebot.io/updates/langchain-ai"
+     },
+     {
+      "name": "GitHub Copilot CLI 1.0.92 environment picker",
+      "date": "2026-10-02",
+      "url": "https://releasebot.io/updates/categories/ai-coding-assistants"
+     },
+     {
+      "name": "TechCrunch roundup: AI agents that live in text messages",
+      "date": "2026-10-03",
+      "url": "https://techcrunch.com/2026/10/03/all-the-ai-agents-that-can-live-in-your-text-messages/"
+     }
+    ]
+   },
+   {
+    "area": "Technical - Materials science",
+    "items": [
+     {
+      "name": "Alkaline iron-chromium redox flow battery via ligand engineering",
+      "date": "2026-09-30",
+      "url": "https://www.nature.com/articles/s41467-026-77810-8"
+     },
+     {
+      "name": "Oxygen-doped WSe2 ballistic p-type transistors",
+      "date": "2026-10-01",
+      "url": "https://www.nature.com/articles/s41467-026-78157-w"
+     },
+     {
+      "name": "Physics-aware generative design of alloy microstructures",
+      "date": "2026-09-30",
+      "url": "https://www.nature.com/articles/s41467-026-78118-3"
+     }
+    ]
+   },
+   {
+    "area": "DIY electronics",
+    "items": [
+     {
+      "name": "UGreen USB-C cable with LCD teardown (EN32LF056, exposed SWD)",
+      "date": "2026-10-02",
+      "url": "https://hackaday.com/2026/10/02/teardown-of-an-usb-c-cable-with-integrated-lcd/"
+     },
+     {
+      "name": "The FPGA Chronicles: Tang Nano 20K",
+      "date": "2026-09-28",
+      "url": "https://hackaday.com/2026/09/28/the-fpga-chronicles-exploring-the-tang-nano-20k/"
+     }
+    ]
+   },
+   {
+    "area": "Data regulation",
+    "items": [
+     {
+      "name": "Data brokers challenge Connecticut privacy law",
+      "date": "2026-10-01",
+      "url": "https://news.bloomberglaw.com/privacy-and-data-security/data-brokers-challenge-connecticut-laws-toughened-privacy-rules"
+     },
+     {
+      "name": "Class certification denied in Planned Parenthood tracking suit",
+      "date": "2026-10-02",
+      "url": "https://www.law360.com/cybersecurity-privacy/articles/2533245/class-cert-denied-in-planned-parenthood-tracking-tech-suit"
+     },
+     {
+      "name": "Salazar v. Paramount Global VPPA preview",
+      "date": "2026-10-02",
+      "url": "https://privacy-daily.com/article/2026/10/02/scotus-ruling-in-salazarparamount-vppa-case-seen-as-impactful-lawyers-say-2610020015"
+     }
+    ]
+   },
+   {
+    "area": "Claude for GTM engineering",
+    "items": [
+     {
+      "name": "HubSpot September 2026 updates: Claude connector and MCP server scopes",
+      "date": "2026-10-01",
+      "url": "https://community.hubspot.com/t/september-2026-product-updates/160603"
+     },
+     {
+      "name": "HubSpot Sales Plugin for Claude",
+      "date": "2026-09-25",
+      "url": "https://community.hubspot.com/t/introducing-the-hubspot-sales-plugin-for-claude/159825"
+     }
+    ]
+   }
+  ]
  }
 ]
